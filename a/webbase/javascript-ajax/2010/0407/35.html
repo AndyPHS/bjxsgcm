@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<TITLE>用JavaScript的日期对象操控时间和日期值_我的网站</TITLE>
+<meta name="description" content="软件开发中一个比较棘手的内容是使用时间和日期值；似乎每种语言或者每种平台都有自己的格式。在Web开发过程中，你可以使用服务器端的代码来操控日期，你也可以使用JavaScript的日期（Date）对象来实现同样的目的。在今天的专栏里，我们将仔细看看这个对象。" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" rev="stylesheet" href="/templets/default/style/weihaiseo.com-Index.css" type="text/css" media="screen">
+<script src="/templets/default/style/ga.js" async="" type="text/javascript"></script>
+<script src="/templets/default/style/common.js" type="text/javascript"></script>
+<script src="/templets/default/style/c_html_js_add.js" type="text/javascript"></script>
+<script type="text/javascript" src="/templets/default/style/m.js"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="topbar">
+<div id="logo">
+<h1><a href="/" title="我的网站">我的网站</a></h1>
+<p>威海SEO拽拽关注山东网站建设、推广和运营的原创博客</p>
+</div>
+<div id="toptool"><!-- AD1 --></div>
+</div>
+<div id="menu"><ul>
+<li class="page_item"><a href="/" title="我的网站"><span>主页</span></a></li>
+
+<li class="page_item"><a href='/a/webbase/'  rel='dropmenu1'><span>网页基础</span></a></li>
+
+<li class="page_item"><a href='/a/pics/' ><span>站长图集</span></a></li>
+
+<li class="page_item"><a href='/a/downloads/' ><span>软件下载</span></a></li>
+
+<li class="page_item"><a href='/a/shops/' ><span>商品销售</span></a></li>
+
+<li class="page_item"><a href='/a/infos/' ><span>分类信息</span></a></li>
+
+<li class="page_item"><a href='http://www.dedecms.com' ><span>织梦CMS</span></a></li>
+
+<li class="page_item"><a href='http://docs.dedecms.com' ><span>帮助文档</span></a></li>
+
+<!-- 导航右侧部分在这里添加即可 -->
+<li class="page_right"><a href="/" title="" target="_blank"><span id="gnew">文摘</span></a></li>
+<li class="page_right"><a href="/" title="" target="_blank"><span>本站下载</span></a></li>
+<li class="page_right"><a href="/" title=""><span>语录</span></a></li>
+<li class="page_right"><a href="/" title="" target="_blank"><span>软件</span></a></li>
+<li class="page_right"><a href="/" title=""><span>微博</span></a></li>
+<li class="page_right"><a href="/" title="" target="_blank"><span>博客大全</span></a></li>
+</ul></div>
+</div>
+<div id="container">
+<div id="content">
+<div id="content-inner">
+<div class="topic-post">
+<div class="topic-content">
+<dl id="post-371">
+<dt>
+<div class="post-date">
+<small>04月</small><span>07日</span>
+</div>
+<div class="post-title">
+<h4>时间：2010-04-07 09:36</h4>
+<h2><a href="/a/webbase/javascript-ajax/2010/0407/35.html" title='用JavaScript的日期对象操控时间和日期值'>用JavaScript的日期对象操控时间和日期值</a></h2>
+<h6><!-- JiaThis Button BEGIN -->
+<div id="ckepop">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_qzone">QQ空间</a>
+	<a class="jiathis_button_tsina">新浪微博</a>
+	<a class="jiathis_button_renren">人人网</a>
+	<a class="jiathis_button_kaixin001">开心网</a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v2.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->来源：<span id="spn371"></span>
+<font color="#FF0000">点击：<script src="/plus/count.php?view=yes&aid=35&mid=1" type='text/javascript' language="javascript"></script>次</font></h6>
+</div>
+</dt><p>当前位置：<a href='http://test.local/'>主页</a> > <a href='/a/webbase/'>网页基础</a> > <a href='/a/webbase/javascript-ajax/'>Javascript/Ajax</a> > </p>
+<dd class="post-info">
+<p><p>软件开发中一个比较棘手的内容是使用时间和日期值；似乎每种语言或者每种平台都有自己的格式。在Web开发过程中，你可以使用服务器端的代码来操控日期，你也可以使用JavaScript的日期（Date）对象来实现同样的目的。在今天的专栏里，我们将仔细看看这个对象。</p><p><strong>使用日期</strong></p><p>在JavaScript里使用时间和日期值非常简单。这要从创建日期对象的一个实例开始：</p>var d = new Date(); <p>这会使用当前的日期和时间在变量d里返回一个日期对象的实例。这个日期对象包括多个用于访问和操控其值的方法和属性。下面的列表列出了用于访问日期值的方法：</p><ul><li><strong>getDate()</strong>：返回月份里的日期。 </li><li><strong>getDay()</strong><strong>：</strong>返回星期几。每周从星期六开始（0－6）。 </li><li><strong>getFullYear()</strong>：返回四位数的年份。 </li><li><strong>getMonth()</strong>：返回月份。 </li><li><strong>getYear()</strong>：返回两位数的年份。 </li><li><strong>getUTCDate()</strong>：根据协调世界时（UTC）返回月份里的日期。 </li><li><strong>getUTCMonth()</strong>：根据协调世界时（0－11）返回月份。 </li><li><strong>getUTCFullYear()</strong>：根据协调世界时返回四位数的年份。 </li></ul><p><strong>注：</strong>维基百科全书（Wikipedia）将协调世界时定义为一种高精度的原子时间标准，它大约相当于世界时（UT）。</p><p>关于JavaScript和日期需要注意的一点是，它使用从1970年1月1日午夜起的毫秒数来保存日期。这叫做历元（epoch），任何在这个日期之前的日期和时间都是不被允许的。</p><p>正如<strong>Listing A</strong>里说明的，使用前面一个列表里的方法是很简单明了的。你需要注意的是日期和星期中的天的值是从零开始的，所以需要向它们添加一个值以显示它们真正的值。你可以很容易就使用一个数组来显示星期几。<strong>列表B</strong>里是JavaScript代码。</p><p>你没有被限制只使用当前的日期。日期对象可以用传递给它的值初始化，就像下面这样：</p><p>var d = new Date("date value");</p><p>利用这种方式，我们可以修改前面的例子来使用特定的日期。<strong>列表C</strong>代表了一种发现给定值的周日期的简单方法。代码会生成下面的结果：</p><p>Today is: Wednesday 4/15/1979<br />UTC is: Wednesday 4/15/1979 </p><p>事实上，创建日期对象实例的方式有四种：</p><p>var d = new Date();<br />var d = new Date('July 4, 1976');<br />var d = new Date(7, 4, 1976);<br />var d = new Date(7, 4, 1976, 12,00,00); </p><p>我们已经讲了前两个（要注意的是可能会用到单引号或者圆括号）。最后两个按照下面的格式使用了单独的整数参数（时间是可选的）：</p><p>var d = new Date(month, day, year, hour, minutes, seconds); </p><p>填充日期对象的另外一种方式是利用setDate方法。它提供了一种重置日期对象的值或者初始化它的方式，但是这要求有一个真正的JavaScript日期对象：</p><p>Var d1 = new Date();<br />var d2 = new Date("7/4/1976");<br />d1.setDate(d2.getDate()); </p><p>填充日期对象的各种属性的固定方法还有很多，但是在讨论它们之前我们先来看看时间吧。</p><p>除了日期组件，日期对象也保存了时间信息。下面的方法能够访问到日期对象的时间信息：</p><ul><li><strong>getHours()</strong>：返回时间的小时部分。 </li><li><strong>getMinutes()</strong>：返回时间的分钟部分。 </li><li><strong>getSeconds()</strong>：返回时间的秒部分。 </li><li><strong>getMilliseconds()</strong>：返回时间的毫秒部分。 </li><li><strong>getTime()</strong>：返回自从1970年1月1日午夜以来的毫秒数。 </li><li><strong>getTimezoneOffset()</strong>：返回本地时间与格里尼治标准时间（GMT）之间的分钟差。 </li><li><strong>getUTCHours()</strong>：根据协调世界时返回时间的小时部分。 </li><li><strong>getUTCMinutes()</strong>：根据协调世界时返回时间的分钟部分。 </li><li><strong>getUTCSeconds()</strong>：根据协调世界时返回时间的秒部分。 </li><li><strong>getUTCMilliseconds()</strong>：根据协调世界时返回时间的毫秒部分。 </li></ul><p>
+            <p align="center"> </p></p>
+<p>除非注明，文章均为本站原创，转载请注明出处，谢谢。分类:  <a target="_blank" href="[field:typeurl/]" title="Javascript/Ajax">Javascript/Ajax</a></p>
+<p>本文地址：<a href="/a/webbase/javascript-ajax/2010/0407/35.html" title="用JavaScript的日期对象操控时间和日期值">/a/webbase/javascript-ajax/2010/0407/35.html</a></p>
+<div class="post-nav">
+上一篇：<a href='/a/webbase/javascript-ajax/2010/0407/34.html'>JavaScript风格要素</a> &nbsp;&nbsp;&nbsp;&nbsp;下一篇：<a href='/a/webbase/javascript-ajax/2010/0407/36.html'>减轻JavaScript测试和调试负担</a> 
+<p> </p>
+</div>
+<p></p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="related-post">
+<h3>【更多相关文章，也许你也喜欢！】</h3>
+<ul>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/44.html" title="网页中常用的Javascript代码">网页中常用的Javascript代码</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/45.html" title="Javascript优化原则">Javascript优化原则</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/46.html" title="讨论Ajax之所以优于JSF的原因">讨论Ajax之所以优于JSF的原因</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/47.html" title="警惕AJAX应用开发中的轻罪和死罪">警惕AJAX应用开发中的轻罪和死罪</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/48.html" title="如何用jQuery简化JavaScript开发">如何用jQuery简化JavaScript开发</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/49.html" title="使用mashups可能会给用户带来不好体验">使用mashups可能会给用户带来不好体验</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/50.html" title="如何用JavaScript实现旋转木马">如何用JavaScript实现旋转木马</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/51.html" title="设计与应用JavaScript对象符号JSON">设计与应用JavaScript对象符号JSON</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/52.html" title="完全了解AJAX">完全了解AJAX</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/53.html" title="用Mozilla免费调试器调试JavaScript">用Mozilla免费调试器调试JavaScript</a></li>
+
+</ul></div>
+
+<div id="respond" class="post-comment">
+<div id="post-comment-title">
+<span id="comment-reply"><a name="comment">快快发表了一针见血的评论,你还等什么？</a></span>
+
+</div>
+<!-- //主模板必须要引入/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="mt1">
+		<dl class="tbox">
+			<dt>
+				<span class="more"></span>
+			</dt>
+            <a name='commettop'></a>
+	<div class="mt1">
+			<dl class="tbox">
+				
+				<!-- //这两个ID的区块必须存在，否则JS会出错 -->
+				<dd id='commetcontentNew'></dd>
+				<dd id='commetcontent'></dd>
+			</dl>
+	</div>
+			<dd>
+				<div class="dede_comment_post">
+          <form action="#" method="post" name="feedback">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="35" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                  
+					<div class="dcmp-content">
+						<textarea cols="70" name="msg" rows="8" class="ipt-txt"></textarea>
+					</div><!-- /dcmp-content -->
+					<div class="dcmp-post"><!--未登陆-->
+					 <div class="dcmp-mood">
+						<ul>            
+								                   
+						</ul>
+					</div><!-- /dcmp-mood -->
+							<div class="dcmp-userinfo" id="_ajax_feedback">
+								
+                                
+                <input type="checkbox" name="notuser" id="dcmp-submit-guest" /><label for="dcmp-submit-guest" />匿名? </label>
+							</div>
+              
+							<div class="dcmp-submit more">
+								<button type="button" onClick='PostComment()'class="post-comment-button">提交评论</button>
+							</div>
+						</div>
+        </form>
+				</div>
+			</dd>
+		</dl>
+	</div><!-- //评论表单区结束 -->
+
+<!-- //评论内容区 -->
+	
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax.php?dopost=getlist&aid=35&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'utf-8';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '35');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+
+<div id="post-comment-body">
+     
+       
+        
+        <div id="submit-box">
+     
+            ◎欢迎参与讨论，请在这里发表您的看法、交流您的观点。
+        </div>	
+      </form>
+       
+        
+    </div>
+</div></div></div>
+<div id="sidebar">
+<div id="sidebar-inner">
+<dl class="widget popular-posts">
+<dt>
+<ul>
+<form action="/plus/search.php" name="formsearch">
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="keyword" type="text" class="search-keyword" id="search-keyword"  value="请输入关键词..." style="color:#ccc" onfocus="if (this.value=='站内搜索，请输入关键词...')this.value=''" onblur="if (this.value=='')this.value='站内搜索，请输入关键词...'"/>
+          <button type="submit" class="search-submit">搜索</button>
+        </form>
+</ul>
+</dt>
+</dl>
+<div class="right">
+<dl class="widget recent-posts">
+<dd><h3>最新文章图片</h3></dd>
+
+ </dl></div>
+<dl class="widget recent-posts">
+<dd><h3>本博最新文章</h3></dd>
+<dt>
+<ul>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/47.html" title="警惕AJAX应用开发中的轻罪和死罪" target="_blank">警惕AJAX应用开发中的轻罪和死罪</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/48.html" title="如何用jQuery简化JavaScript开发" target="_blank">如何用jQuery简化JavaScript开发</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/49.html" title="使用mashups可能会给用户带来不好体验" target="_blank">使用mashups可能会给用户带来不好体验</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/50.html" title="如何用JavaScript实现旋转木马" target="_blank">如何用JavaScript实现旋转木马</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/51.html" title="设计与应用JavaScript对象符号JSON" target="_blank">设计与应用JavaScript对象符号JSON</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/52.html" title="完全了解AJAX" target="_blank">完全了解AJAX</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/53.html" title="用Mozilla免费调试器调试JavaScript" target="_blank">用Mozilla免费调试器调试JavaScript</a></li>
+
+</ul>
+</dt>
+</dl>
+<dl class="widget recent-posts">
+<dd><h3>热门文章排行</h3></dd>
+<dt>
+<ul>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/39.html">Web2.0十大Ajax安全漏洞以及成因</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/34.html">JavaScript风格要素</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控时间和日期值</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/36.html">减轻JavaScript测试和调试负担</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/37.html">使用AJAX技术的十大理由</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/38.html">Ajax 技术入门简介</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/40.html">JavaScript开发时的五个小提示</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/41.html">JavaScript：世界上误解最深的语言</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/42.html">JavaScript基础知识总结</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a></li>
+
+</ul>
+</dt>
+</dl>
+<dl class="widget recent-posts">
+<dd><h3>站点统计</h3></dd>
+<dt>
+
+<ul>
+<li>文章总数：75</li>
+<li>评论总数：6</li>
+<li>本月更新：</li>
+<li>访问总数：3341</li>
+<li>当前主题:低调与华丽</li>
+<li>当前样式:LuSongSong</li>
+</ul>
+</dt>
+</dl>
+<dl class="widget link-list">
+<dd><h3>友情链接</h3></dd>
+<dt>
+<ul>
+
+<li><a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> </li>
+
+<li><a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> </li>
+
+<li><a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> </li>
+<li><a href="http://www.weihaiseo.com" title="威海SEO">威海SEO</a></li>
+
+</ul>
+</dt>
+</dl>
+</div>
+</div>
+
+
+</div> <div id="footer">
+<ul>
+<li class="copyright">
+<p>联系邮箱：965023536@qq.com【<a href="/" target="_blank" rel="nofollow" title="网站设计作品欣赏">成功案例</a>】【<a href="/" rel="nofollow" target="_blank">投放广告</a>】 
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-11293844-1']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script><br/>Designed By 拽拽&nbsp;Powered By DEDE Cms </p>
+</li>
+<li><a href="/map.html" title="网站地图" rel="nofollow">网站地图</a></li><li><a href="/" title="网站标签" rel="nofollow">网站标签</a></li><li><a href="/" title="友情链接" rel="nofollow">友情链接</a></li>
+
+</ul>
+</div>
+
+
+</body>
+</html>

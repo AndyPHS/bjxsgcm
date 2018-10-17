@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<TITLE>JavaScript开发时的五个小提示_我的网站</TITLE>
+<meta name="description" content="如果要在form中绑定事件处理程序时，应该只在 元素上绑定submit事件，而不是给提交按钮绑定click事件。March：这个方式固然很好，但是，公司开发时使用了Web Flow，一个页面就一个大form，而里面可能有若干个提交按钮，所以不得不把部分事件处理程序绑定在了" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" rev="stylesheet" href="/templets/default/style/weihaiseo.com-Index.css" type="text/css" media="screen">
+<script src="/templets/default/style/ga.js" async="" type="text/javascript"></script>
+<script src="/templets/default/style/common.js" type="text/javascript"></script>
+<script src="/templets/default/style/c_html_js_add.js" type="text/javascript"></script>
+<script type="text/javascript" src="/templets/default/style/m.js"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="topbar">
+<div id="logo">
+<h1><a href="/" title="我的网站">我的网站</a></h1>
+<p>威海SEO拽拽关注山东网站建设、推广和运营的原创博客</p>
+</div>
+<div id="toptool"><!-- AD1 --></div>
+</div>
+<div id="menu"><ul>
+<li class="page_item"><a href="/" title="我的网站"><span>主页</span></a></li>
+
+<li class="page_item"><a href='/a/webbase/'  rel='dropmenu1'><span>网页基础</span></a></li>
+
+<li class="page_item"><a href='/a/pics/' ><span>站长图集</span></a></li>
+
+<li class="page_item"><a href='/a/downloads/' ><span>软件下载</span></a></li>
+
+<li class="page_item"><a href='/a/shops/' ><span>商品销售</span></a></li>
+
+<li class="page_item"><a href='/a/infos/' ><span>分类信息</span></a></li>
+
+<li class="page_item"><a href='http://www.dedecms.com' ><span>织梦CMS</span></a></li>
+
+<li class="page_item"><a href='http://docs.dedecms.com' ><span>帮助文档</span></a></li>
+
+<!-- 导航右侧部分在这里添加即可 -->
+<li class="page_right"><a href="/" title="" target="_blank"><span id="gnew">文摘</span></a></li>
+<li class="page_right"><a href="/" title="" target="_blank"><span>本站下载</span></a></li>
+<li class="page_right"><a href="/" title=""><span>语录</span></a></li>
+<li class="page_right"><a href="/" title="" target="_blank"><span>软件</span></a></li>
+<li class="page_right"><a href="/" title=""><span>微博</span></a></li>
+<li class="page_right"><a href="/" title="" target="_blank"><span>博客大全</span></a></li>
+</ul></div>
+</div>
+<div id="container">
+<div id="content">
+<div id="content-inner">
+<div class="topic-post">
+<div class="topic-content">
+<dl id="post-371">
+<dt>
+<div class="post-date">
+<small>04月</small><span>07日</span>
+</div>
+<div class="post-title">
+<h4>时间：2010-04-07 09:36</h4>
+<h2><a href="/a/webbase/javascript-ajax/2010/0407/40.html" title='JavaScript开发时的五个小提示'>JavaScript开发时的五个小提示</a></h2>
+<h6><!-- JiaThis Button BEGIN -->
+<div id="ckepop">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_qzone">QQ空间</a>
+	<a class="jiathis_button_tsina">新浪微博</a>
+	<a class="jiathis_button_renren">人人网</a>
+	<a class="jiathis_button_kaixin001">开心网</a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v2.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->来源：<span id="spn371"></span>
+<font color="#FF0000">点击：<script src="/plus/count.php?view=yes&aid=40&mid=1" type='text/javascript' language="javascript"></script>次</font></h6>
+</div>
+</dt><p>当前位置：<a href='http://test.local/'>主页</a> > <a href='/a/webbase/'>网页基础</a> > <a href='/a/webbase/javascript-ajax/'>Javascript/Ajax</a> > </p>
+<dd class="post-info">
+<p><p>原文：</p><p>真是五个很quick的小提示：</p><h2>只在<code><font face="NSimsun"><form></font></code>元素上使用<code><font face="NSimsun">submit</font></code>事件</h2><p>如果要在form中绑定事件处理程序时，应该只在<code><font face="NSimsun"><form></font></code>元素上绑定<code><font face="NSimsun">submit</font></code>事件，而不是给提交按钮绑定<code><font face="NSimsun">click</font></code>事件。<br /><strong>March：</strong>这个方式固然很好，但是，公司开发时使用了Web Flow，一个页面就一个大form，而里面可能有若干个提交按钮，所以不得不把部分事件处理程序绑定在了提交按钮的<code><font face="NSimsun">click</font></code>事件上。</p><h2>可点击的都应该是链接</h2><p>不要给除锚元素（<code><font face="NSimsun"><a></font></code>）以外的元素绑定<code><font face="NSimsun">click</font></code>事件。这一点对于键盘用户很重要，因为他们在仅通过键盘获取元素焦点时会遇到困难。<br /><strong>March：</strong>不过个人感觉锚元素还是应该只用作链接，而一些功能性的操作（比如Google Reader的Mark all as new），最好还是用<span>来标注，accessibility的问题可以通过快捷键等方式解决。这样做可以更好的还原HTML元素的语义。</p><h2>简单的for循环优化</h2><p>在你写一个for循环时，有个很简单的技巧能够提高性能。<br /><font face="NSimsun"><code class="blockcode">for ( var i = 0; i < elements.length; ++i )</code><br /></font>使用下面的语句代替上面的：<br /><font face="NSimsun"><code class="blockcode">for ( var i = 0, j = elements.length; i < j; ++i )</code><br /></font>这样可以把元素的个数（<code><font face="NSimsun">elements.length</font></code>的值）储存在一个变量<code><font face="NSimsun">j</font></code>中，这样就不必在每次循环时都计算一遍元素的个数。</p><h2>用匿名函数来作为事件处理程序</h2><p>尤其是对于短小的函数，创建一个匿名函数会比使用一个命名函数的引用更具可读性。<br /><font face="NSimsun"><code class="blockcode">anchor.onclick = function() { map.goToPosition( home ); return false; }</code><br /></font><strong>March：</strong>在较复杂的JavaScript开发时还是使用命名函数效率更高。</p><h2>使用<code><font face="NSimsun">Array.join</font></code>代替字符串连接（concatenating strings）</h2><p>在将很多字符串、变量等连接成一个很长的字符串时，将所有字符串和变量放入一个数组，然后用<code><font face="NSimsun">join</font></code>方法将他们组成一个长字符串，这样无论从代码可读性还是从性能上都更胜于字符串连接。<br /><code class="blockcode"><font face="NSimsun">var text = 'There are' + elements.length + 'members in the elements array.';<br />var text = ['There are', elements.length, 'members in the elements array.'].join(' ');</font></code></p><p><code class="blockcode"><font face="新宋体">来源：</font></code></p>
+            <p align="center"> </p></p>
+<p>除非注明，文章均为本站原创，转载请注明出处，谢谢。分类:  <a target="_blank" href="[field:typeurl/]" title="Javascript/Ajax">Javascript/Ajax</a></p>
+<p>本文地址：<a href="/a/webbase/javascript-ajax/2010/0407/40.html" title="JavaScript开发时的五个小提示">/a/webbase/javascript-ajax/2010/0407/40.html</a></p>
+<div class="post-nav">
+上一篇：<a href='/a/webbase/javascript-ajax/2010/0407/39.html'>Web2.0十大Ajax安全漏洞以及成因</a> &nbsp;&nbsp;&nbsp;&nbsp;下一篇：<a href='/a/webbase/javascript-ajax/2010/0407/41.html'>JavaScript：世界上误解最深的语言</a> 
+<p> </p>
+</div>
+<p></p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="related-post">
+<h3>【更多相关文章，也许你也喜欢！】</h3>
+<ul>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/44.html" title="网页中常用的Javascript代码">网页中常用的Javascript代码</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/45.html" title="Javascript优化原则">Javascript优化原则</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/46.html" title="讨论Ajax之所以优于JSF的原因">讨论Ajax之所以优于JSF的原因</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/47.html" title="警惕AJAX应用开发中的轻罪和死罪">警惕AJAX应用开发中的轻罪和死罪</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/48.html" title="如何用jQuery简化JavaScript开发">如何用jQuery简化JavaScript开发</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/49.html" title="使用mashups可能会给用户带来不好体验">使用mashups可能会给用户带来不好体验</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/50.html" title="如何用JavaScript实现旋转木马">如何用JavaScript实现旋转木马</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/51.html" title="设计与应用JavaScript对象符号JSON">设计与应用JavaScript对象符号JSON</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/52.html" title="完全了解AJAX">完全了解AJAX</a></li>
+<li><span>2010-04-07</span>
+<a href="/a/webbase/javascript-ajax/2010/0407/53.html" title="用Mozilla免费调试器调试JavaScript">用Mozilla免费调试器调试JavaScript</a></li>
+
+</ul></div>
+
+<div id="respond" class="post-comment">
+<div id="post-comment-title">
+<span id="comment-reply"><a name="comment">快快发表了一针见血的评论,你还等什么？</a></span>
+
+</div>
+<!-- //主模板必须要引入/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="mt1">
+		<dl class="tbox">
+			<dt>
+				<span class="more"></span>
+			</dt>
+            <a name='commettop'></a>
+	<div class="mt1">
+			<dl class="tbox">
+				
+				<!-- //这两个ID的区块必须存在，否则JS会出错 -->
+				<dd id='commetcontentNew'></dd>
+				<dd id='commetcontent'></dd>
+			</dl>
+	</div>
+			<dd>
+				<div class="dede_comment_post">
+          <form action="#" method="post" name="feedback">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="40" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                  
+					<div class="dcmp-content">
+						<textarea cols="70" name="msg" rows="8" class="ipt-txt"></textarea>
+					</div><!-- /dcmp-content -->
+					<div class="dcmp-post"><!--未登陆-->
+					 <div class="dcmp-mood">
+						<ul>            
+								                   
+						</ul>
+					</div><!-- /dcmp-mood -->
+							<div class="dcmp-userinfo" id="_ajax_feedback">
+								
+                                
+                <input type="checkbox" name="notuser" id="dcmp-submit-guest" /><label for="dcmp-submit-guest" />匿名? </label>
+							</div>
+              
+							<div class="dcmp-submit more">
+								<button type="button" onClick='PostComment()'class="post-comment-button">提交评论</button>
+							</div>
+						</div>
+        </form>
+				</div>
+			</dd>
+		</dl>
+	</div><!-- //评论表单区结束 -->
+
+<!-- //评论内容区 -->
+	
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax.php?dopost=getlist&aid=40&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'utf-8';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '40');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('/plus/feedback_ajax.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->
+
+<div id="post-comment-body">
+     
+       
+        
+        <div id="submit-box">
+     
+            ◎欢迎参与讨论，请在这里发表您的看法、交流您的观点。
+        </div>	
+      </form>
+       
+        
+    </div>
+</div></div></div>
+<div id="sidebar">
+<div id="sidebar-inner">
+<dl class="widget popular-posts">
+<dt>
+<ul>
+<form action="/plus/search.php" name="formsearch">
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="keyword" type="text" class="search-keyword" id="search-keyword"  value="请输入关键词..." style="color:#ccc" onfocus="if (this.value=='站内搜索，请输入关键词...')this.value=''" onblur="if (this.value=='')this.value='站内搜索，请输入关键词...'"/>
+          <button type="submit" class="search-submit">搜索</button>
+        </form>
+</ul>
+</dt>
+</dl>
+<div class="right">
+<dl class="widget recent-posts">
+<dd><h3>最新文章图片</h3></dd>
+
+ </dl></div>
+<dl class="widget recent-posts">
+<dd><h3>本博最新文章</h3></dd>
+<dt>
+<ul>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/47.html" title="警惕AJAX应用开发中的轻罪和死罪" target="_blank">警惕AJAX应用开发中的轻罪和死罪</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/48.html" title="如何用jQuery简化JavaScript开发" target="_blank">如何用jQuery简化JavaScript开发</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/49.html" title="使用mashups可能会给用户带来不好体验" target="_blank">使用mashups可能会给用户带来不好体验</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/50.html" title="如何用JavaScript实现旋转木马" target="_blank">如何用JavaScript实现旋转木马</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/51.html" title="设计与应用JavaScript对象符号JSON" target="_blank">设计与应用JavaScript对象符号JSON</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/52.html" title="完全了解AJAX" target="_blank">完全了解AJAX</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/53.html" title="用Mozilla免费调试器调试JavaScript" target="_blank">用Mozilla免费调试器调试JavaScript</a></li>
+
+</ul>
+</dt>
+</dl>
+<dl class="widget recent-posts">
+<dd><h3>热门文章排行</h3></dd>
+<dt>
+<ul>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/39.html">Web2.0十大Ajax安全漏洞以及成因</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/34.html">JavaScript风格要素</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控时间和日期值</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/36.html">减轻JavaScript测试和调试负担</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/37.html">使用AJAX技术的十大理由</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/38.html">Ajax 技术入门简介</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/40.html">JavaScript开发时的五个小提示</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/41.html">JavaScript：世界上误解最深的语言</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/42.html">JavaScript基础知识总结</a></li>
+<li><a href="/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a></li>
+
+</ul>
+</dt>
+</dl>
+<dl class="widget recent-posts">
+<dd><h3>站点统计</h3></dd>
+<dt>
+
+<ul>
+<li>文章总数：75</li>
+<li>评论总数：6</li>
+<li>本月更新：</li>
+<li>访问总数：3341</li>
+<li>当前主题:低调与华丽</li>
+<li>当前样式:LuSongSong</li>
+</ul>
+</dt>
+</dl>
+<dl class="widget link-list">
+<dd><h3>友情链接</h3></dd>
+<dt>
+<ul>
+
+<li><a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> </li>
+
+<li><a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> </li>
+
+<li><a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> </li>
+<li><a href="http://www.weihaiseo.com" title="威海SEO">威海SEO</a></li>
+
+</ul>
+</dt>
+</dl>
+</div>
+</div>
+
+
+</div> <div id="footer">
+<ul>
+<li class="copyright">
+<p>联系邮箱：965023536@qq.com【<a href="/" target="_blank" rel="nofollow" title="网站设计作品欣赏">成功案例</a>】【<a href="/" rel="nofollow" target="_blank">投放广告</a>】 
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-11293844-1']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script><br/>Designed By 拽拽&nbsp;Powered By DEDE Cms </p>
+</li>
+<li><a href="/map.html" title="网站地图" rel="nofollow">网站地图</a></li><li><a href="/" title="网站标签" rel="nofollow">网站标签</a></li><li><a href="/" title="友情链接" rel="nofollow">友情链接</a></li>
+
+</ul>
+</div>
+
+
+</body>
+</html>

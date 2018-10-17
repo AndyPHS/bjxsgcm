@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>什么是期货？_实在投资网</title>
+<meta name="keywords" content="什么,是,期货,从,定,义上,来说,期货,是在," />
+<meta name="description" content="从定义上来说，期货是在交易所内进行交易的标准化的合约，该合约约定了在未来某一个特定的时间（交割日）以确定的价格（期货价格）交易一定数量（合约规模）的某种商品。这个" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=140">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=140";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	
+      	<li><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	
+      	<li><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	<li class='hover'><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	<li><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/qihuo/'>期货</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>什么是期货？</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-06-17 13:05<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=140&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">从定义上来说，期货是在交易所内进行交易的标准化的合约，该合约约定了在未来某一个特定的时间（交割日）以确定的价格（期货价格）交易一定数量（合约规模）的某种商品。这个</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <div>
+	<div>
+		<p>
+			<span style="font-size:16px;">从定义上来说，期货是在交易所内进行交易的标准化的合约，该合约约定了在未来某一个特定的时间（交割日）以确定的价格（期货价格）交易一定数量（合约规模）的某种商品。这个定义有很多词需要解释，具体如下：</span></p>
+		<p>
+			<span style="font-size:16px;">1. 交易所。期货都是在正规的交易所内进行交易的，国内的正规期货交易所包括中国金融期货交易所、大连商品交易所、郑州商品交易所和上海期货交易所。交易所提供了期货品种、信息技术系统和结算、风控等服务。目前，我国的金融期货都在中国金融期货交易所交易，而商品期货则在另外三个期货交易所交易。<br />
+			<br />
+			2.标准化。标准化的意思是买卖双方做期货交易的合约条款都是交易所制定的，比如说交割的时间、一手期货对应的商品数量（如，多少吨铜）等条款，都是交易所定好了的。买卖双方只需要&ldquo;商定&rdquo;价格就行了&mdash;&mdash;如果你认可这个价格，那你就可以买或卖了。简单地说，标准化指的是合约的各方面都是固定了的，只有期货价格在变。<br />
+			<br />
+			3. 合约。期货是合约，而且是面向未来的合约，合约约定了未来买卖（交割）一定标的物的价格。既然是未来，那就不是现在进行&ldquo;一手交钱一手交货&rdquo;，而只是现在约定未来某个时点&ldquo;一手交钱一手交货&rdquo;。期货只是这个约定。既然是约定，就有可能违约。怎么办？为了防止买卖一方违约，订立合约的时刻，就得交点保证金，交给交易所看管着，违约了，保证金就没了。这就涉及到保证金的这个制度，而正是保证金制度，使得期货交易的风险，比股票交易的风险大很多。<br />
+			<br />
+			4. 保证金制度。为了防止违约，买卖双方都得交保证金。为什么双方都得交？因为你不知道未来的现货价格对买方还是卖方不利，未来价格谁都预测不了。当情况对自己不利的时候，人们倾向于违约。保证金虽然交给了交易所，但是还是客户的钱，未来交割时可以充抵货款。<br />
+			要交的保证金的额度一般是合约价值的某个百分比，如5%，或者10%。</span></p>
+		<p>
+			<span style="font-size:16px;">下面出场的就是期货交易规则里面的大杀器了，正是它们的存在，使得期货市场能够称为一个市场，也使得期货市场的风险让许多人望而却步。</span></p>
+		<p>
+			<span style="font-size:16px;">5.当日无负债结算制度。炒股票的人，一旦亏了，就岿然不动拿着等着解套。在期货里，完全是另外一套玩儿法！。</span></p>
+		<p>
+			<span style="font-size:16px;">6. 平仓。简而言之，把盈利落袋为安，方法很简单，就是做一次&ldquo;卖出平仓&rdquo;交易，按照市场价格把持仓平掉就行了。要注意，这里不是&ldquo;卖出&rdquo;这么简单，而是&ldquo;卖出平仓&rdquo;，这个平仓也是期货里面独有的，股票交易里是没有的。</span></p>
+		<p>
+			<span style="font-size:16px;">7. 做空。期货交易天然就有做空的规则。做空的意思就是，你还没有货呢，你就开始卖货了。其实并不是在卖货，而是订立一个买卖合约，合约规定你在未来得把货卖出去而已。做空的盈利方法跟做多是反着的，当你卖的时候价格高，而结算或者平仓的时候价格低，你就赚了。</span></p>
+		<p>
+			<span style="font-size:16px;">8. T+0。T+0的意思就是当天建立的仓位当天就可平仓。</span></p>
+		<span style="font-size:16px;">以上只是期货交易的重点规则的大部分，细节的部分以及市场结构等都没讲。希望能够让您认清楚这个市场。像所有的金融市场一样，在期货市场中，弄清楚规则的人，总体上在市场上坚持得更久。期货市场比股票市场更能放大人的恐惧和贪婪心理，对人的自律能力、认识能力要求更高。如果您想认清自己，不妨在这里一试身手。</span></div>
+</div>
+<br />
+<br />
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：没有了 </li>
+     <li>下一篇：<a href='/a/qihuo/2018/0806/141.html'>期货入门知识</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/qihuo/2018/0806/145.html">外汇和期货的区别是什么？</a>
+       <p>外汇和期货的区别是什么？很多的投资者在进行投资时，都不知...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/qihuo/2018/0806/142.html">2017年期货市场大事件盘点</a></li>
+<li><a href="/a/qihuo/2018/0806/140.html">什么是期货？</a></li>
+<li><a href="/a/qihuo/2018/0806/143.html">期货交易的十条基本原则</a></li>
+<li><a href="/a/qihuo/2018/0806/144.html">期货市场是如何运转的？</a></li>
+<li><a href="/a/qihuo/2018/0806/145.html">外汇和期货的区别是什么</a></li>
+<li><a href="/a/qihuo/2018/0806/141.html">期货入门知识</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>

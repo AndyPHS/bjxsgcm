@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>外汇交易和其他投资方式的对比_实在投资网</title>
+<meta name="keywords" content="外汇交易,和,其他,投资方式,的,对比,外汇,是," />
+<meta name="description" content="外汇是单纯比拼个人能力的理财方式中，最公平，投入最少，获利最高，风险也最高的投资方式。 其余" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=119">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=119";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	<li class='hover'><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	<li><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	
+      	<li><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	
+      	<li><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/waihui/'>外汇</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>外汇交易和其他投资方式的对比</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-06-09 13:24<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=119&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">外汇是单纯比拼个人能力的理财方式中，最公平，投入最少，获利最高，风险也最高的投资方式。 其余</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:16px;">外汇是单纯比拼个人能力的理财方式中，最公平，投入最少，获利最高，风险也最高的投资方式。</span><br />
+	&nbsp;</div>
+<div>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		在我们赚到的钱越来越不值钱的时候，在感觉自己的努力带来的财富不断的贬值的时候，除了心塞，除了抱怨，我们还能做点什么呢。很显然，除了坐以待毙，我们还可以通过投资理财来尽量让我们的资产的保值和增值，起码能减少点损失。下面我们一起来看看个人投资理财渠道都有哪些呢？</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		那么，让我们来学习下面10种投资理财方式：</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		1.银行存款</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		银行储蓄是最保险、最安全的投资方式，但因为其收益较低，所以人们只是将一部分固定的钱做银行存款，在风险较大的投资市场，不至于损失太大，保本保利。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：风险低，财产安全、本金收益有保障。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：收益太低，尤其在今天通胀加剧之下，储蓄收益甚至赶不上货币贬值的速度。因而更多人选择其它形式的理财工具。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		2.股票</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		与房产，珠宝首饰，古董字画相比，股票流动性好，变现能力强；与银行储蓄，债券相比，股票价格波幅大。股市风险的不可预测性毕竟存在。高收益对应着高风险，投资股票的心理素质和逻辑思维判断能力的要求较高。股票价格变动较大，投资者不能只想盈利，还要有赔钱的心理准备和实际承受能力。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：股票门槛低，投资灵活，但需要投资者有一定的经济知识。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：由于风险不可测，股票更适合经济条件较好，有一定风险承受能力的人。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		3.债券</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		与股票相比，债券通常规定有固定的利率。债券的投资风险要比股票的小、利息较高、收益稳定。国债对于那些收入不是太高，随时有可能动用存款以应付不时之需的谨慎投资者来说，算是最理想的投资渠道了。如果你手上有一笔长期不需动用的闲钱，希望能获得更多一点的利润，但又不敢冒太大风险，可以大胆买进一些企业债券。企业债券的利息收入虽然也要缴纳利息税，但税后收入仍比同期储蓄存款高出一大截。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：固定收入，利率高时收入也颇可观;可以自由流通，不一定要到到期才能还本，随时可以到次级市场变现;可以利用附买回及卖出回购约定灵活调度资金;有不同的到期日可供选择。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：利率上扬时，价格会下跌;对抗通货膨胀的能力较差。债券投资本金的安全性视发行机构的信用而定，获利则受利率风险影响，有时还会受通货膨胀风险威胁。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		4.外汇</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		外汇投资，可以作为一种储蓄的辅助投资，选择国际上较为坚挺的币种兑换后存入银行，也许可以获得较多的机会。外汇投资对硬件的要求很高，且要求投资者能够洞悉国际金融形势，其所耗的时间和精力都超过了工薪阶层可以承受的范围，因而这种投资活动对于大多数工薪阶层来说不太现实。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：外汇现对于股票来说市场比较干净，浮动大多受供求关系影响，有一定的预见性，一般不会受集团或个人的操控而有突发的或大幅的波动，再由于波动较小，风险也相对较小。而相对于债券收益会大一些。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：由于波动较小，投机的收益也就相对于股票来说要小。从风险的角度讲，由于外汇买卖中有杠杆的操作，因此风险也会相应的扩大。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		5.基金</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		基金分股票型基金和货币型基金</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		股票型基金：相当于拿钱让专业的基金公司替你炒股，基金公司收取一定的佣金。和自己直接炒股本质区别不大。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		货币型基金:一般年华收益率在3.5%到5%之间，风险很小，收益稳定。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：对于缺乏专业知识的个人投资来说，基金无疑帮他们省去很多时间和精力。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：基金的种类很多，风险不一，一般来说，收益越高，风险越大。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		6.不动产</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		不动产相对来说也是一种低风险，具有很大的升值潜力的投资方式，但是由于不动产的流动性比较慢，变现时间长，交易的手续繁杂，很多人也是望而却步，对于手头有限的资金，思量再三，不敢出手。购得房地产后，投资者应随机应变，待市场大幅看涨时，果断脱手套现，获取大笔价差收入。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：房子既可居住出租，也可坐等升值出售，在经济持续繁荣之下，房产投资升值前景被广为看好。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：房产价格易受到经济形势，政策等因素影响，同时不菲的价格，对于投资人来说也是不小的经济负担。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		<br />
+		7.期货</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		期货与现货差不多。但是其保证金是1%&mdash;10%不定，其风险就被无限放大了，同时，期货要求的起点比较高，至少要50万初始资金，限制了大多数中小投资者。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：以小博大、交易便利、效率高、双向操作、随时平仓、保障性高，合约的履约有保证。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：杠杆作用很大、未来现货市场价格的不确定性使期货投资难以把握。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		8.黄金</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		黄金投资形式有五大类：实金投资(即金条)、金币投资、金首饰投资、纸黄金投资、黄金期货投资。投资黄金能赚钱，主要是看升值。金价虽会因国际政治、经济局势而略有起伏，但整体上将是平稳小涨。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：黄金保值的作用非常明显。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：价格波动大，投资理财风险也很大，投资黄金须谨慎。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		9.收藏</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		收藏不仅是一种修身养性的业余文化活动，它更上一条致富的途径，是一把打开富贵之门的金钥匙。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		优点：具有艺术价值，升值空间大。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		缺点：收藏品投资对专业知识及经济能力的要求都非常高，投资门槛高。风险比股票低但是不能忽视。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		&nbsp;</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		美国沃伦.巴特菲说：&ldquo;一个人一生能积累多少钱，不是取决于它能够赚多少钱，而是取决于他如何投资理财，人找钱不如钱找钱，要知道让钱为你工作，而不是你为钱工作。&rdquo;学会以上10种投资理财方式，钱生钱就已经不是问题了。但是要注意：不要把鸡蛋放在同一个篮子里。你理财，财理你。不同的财富观，带给你的世界也不一样。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		有经济学家说过：如果一个人会投资，可能会让他一时拥有很多钱；如果一个人会理财，可能会让他一辈子都拥有很多钱。</p>
+	<p style="border: 0px; margin: 0.63em 0px 1.8em; padding: 0px; font-size: 16px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; color: rgb(25, 25, 25); font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif;">
+		<span style="font-weight: 700; border: 0px; margin: 0px; padding: 0px;">理财分析师 寄语：投资的道路不是一帆风顺的，往往荆棘丛生。不少人就是迈不过这道坎，害怕、退缩、放弃、变向，结果只能与成功失之交臂。</span></p>
+</div>
+<br />
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/a/waihui/2018/0805/118.html'>外汇交易是碰运气吗？</a> </li>
+     <li>下一篇：<a href='/a/waihui/2018/0805/120.html'>外汇交易的特点</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/waihui/2018/0809/151.html">外汇和股票,期货的对比</a>
+       <p>股票 国内期货 外汇 评论 交易方向 单向买涨 双边交易（多空）...</p>
+      </li>
+<li><a href="/a/waihui/2018/0805/117.html">国内外汇交易的现状</a>
+       <p>简单的回答是：合法，不违法，违法的三种情况都有。 合法的情...</p>
+      </li>
+<li><a href="/a/waihui/2018/0805/125.html">贸易战中的汇率</a>
+       <p>背景： 特朗普上台后，宣称中国为汇率操纵国，后又在2018年4月...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/waihui/2018/0809/151.html">外汇和股票,期货的对比</a></li>
+<li><a href="/a/waihui/2018/0805/124.html">选对平台，资金无忧</a></li>
+<li><a href="/a/waihui/2018/0805/117.html">国内外汇交易的现状</a></li>
+<li><a href="/a/waihui/2018/0805/119.html">外汇交易和其他投资方式</a></li>
+<li><a href="/a/waihui/2018/0805/121.html">外汇交易需要多少前期资</a></li>
+<li><a href="/a/waihui/2018/0805/118.html">外汇交易是碰运气吗？</a></li>
+<li><a href="/a/waihui/2018/0805/122.html">遍及全球的MT4，谈谈外汇</a></li>
+<li><a href="/a/waihui/2018/0805/123.html">外汇交易如何开展</a></li>
+<li><a href="/a/waihui/2018/0805/120.html">外汇交易的特点</a></li>
+<li><a href="/a/waihui/2018/0813/152.html">外汇市场最常见的交易货</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>

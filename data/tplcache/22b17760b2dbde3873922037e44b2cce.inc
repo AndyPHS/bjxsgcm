@@ -1,0 +1,2 @@
+<dd><a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" ></a></dd>
+ <span><a title="[field:title function='htmlspecialchars(@me)'/] " href="[field:arcurl /]">[field:title /]</a></span>

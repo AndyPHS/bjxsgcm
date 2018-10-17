@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选对平台，资金无忧_实在投资网</title>
+<meta name="keywords" content="选,对,平台,资金,无忧,合法,的,外汇,交易平台," />
+<meta name="description" content="合法的外汇交易平台： 针对个人开展的外汇交易，主要是保证金外汇交易。在中国，完全合法的外汇交易，只能去银行。目前我国多家银行已经开展了针对个人的外汇保证金业务。 以" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=124">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=124";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	<li class='hover'><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	<li><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	
+      	<li><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	
+      	<li><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/waihui/'>外汇</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>选对平台，资金无忧</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-06-08 18:46<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=124&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">合法的外汇交易平台： 针对个人开展的外汇交易，主要是保证金外汇交易。在中国，完全合法的外汇交易，只能去银行。目前我国多家银行已经开展了针对个人的外汇保证金业务。 以</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <div>
+	合法的外汇交易平台：</div>
+<div>
+	&nbsp;</div>
+<div>
+	针对个人开展的外汇交易，主要是保证金外汇交易。在中国，完全合法的外汇交易，只能去银行。目前我国多家银行已经开展了针对个人的外汇保证金业务。</div>
+<div>
+	&nbsp;</div>
+<div>
+	以下是工商银行对外汇业务的相关网页：</div>
+<div>
+	&nbsp;</div>
+<div>
+	<a href="http://www.icbc.com.cn/icbc/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E4%B8%93%E5%8C%BA/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E5%AD%A6%E8%8B%91/%E7%83%AD%E7%82%B9%E9%97%AE%E7%AD%94/%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C%E8%B4%A6%E6%88%B7%E5%A4%96%E6%B1%87%E4%B8%9A%E5%8A%A1%E7%9F%A5%E8%AF%86%E9%97%AE%E7%AD%94.htm">http://www.icbc.com.cn/icbc/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E4%B8%93%E5%8C%BA/%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E5%AD%A6%E8%8B%91/%E7%83%AD%E7%82%B9%E9%97%AE%E7%AD%94/%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C%E8%B4%A6%E6%88%B7%E5%A4%96%E6%B1%87%E4%B8%9A%E5%8A%A1%E7%9F%A5%E8%AF%86%E9%97%AE%E7%AD%94.htm</a></div>
+<div>
+	&nbsp;</div>
+<div>
+	银行外汇业务的特点，或者说缺点是：需提供100%交易保证金，点差大。具体说，想交易1手（10万美元），就需要提供10万美元的保证金。点差大概在150左右，也就是一次的交易成本是150美元。一般的个人，很难通过这种交易来实现获利的。</div>
+<div>
+	&nbsp;</div>
+<div>
+	不违法的平台：</div>
+<div>
+	&nbsp;</div>
+<div>
+	国外正规，受监管的外汇交易平台，在国内开展的业务。特点是：高杠杆，低点差。具体的说，基本是1:400的杠杆，想交易1手（10万美元），只需要提供250美元的保证金（10万的四百分之一）。点差大概在15左右，也就是一次的交易成本是15美元。</div>
+<div>
+	&nbsp;</div>
+<div>
+	像爱华，嘉盛都是这类老牌的正规国外平台。</div>
+<div>
+	&nbsp;</div>
+<div>
+	国家针对国外正规交易平台在国内如何开展业务，并没有相关的法律规定，这些平台只能遵从国外的法律在国内开展业务。用户的资金都是存在国外第三方银行的帐号中，平台商无法触碰。</div>
+<div>
+	&nbsp;</div>
+<div>
+	违法的平台：</div>
+<div>
+	&nbsp;</div>
+<div>
+	这种是指上述第二种的国内山寨版，从交易软件到网站，都是私人在国内违法设立，用户的资金并没有参与到国际外汇交易当中，都存在个人的帐号中，所谓的外汇交易，只不过是用盗版交易软件玩的模拟游戏，类似网络游戏中的私服。这种从性质上讲，不属于外汇交易平台，而是非法集资，当然是违法的。</div>
+<div>
+	&nbsp;</div>
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/a/waihui/2018/0805/123.html'>外汇交易如何开展</a> </li>
+     <li>下一篇：<a href='/a/waihui/2018/0805/125.html'>贸易战中的汇率</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/waihui/2018/0809/151.html">外汇和股票,期货的对比</a>
+       <p>股票 国内期货 外汇 评论 交易方向 单向买涨 双边交易（多空）...</p>
+      </li>
+<li><a href="/a/waihui/2018/0805/117.html">国内外汇交易的现状</a>
+       <p>简单的回答是：合法，不违法，违法的三种情况都有。 合法的情...</p>
+      </li>
+<li><a href="/a/waihui/2018/0805/125.html">贸易战中的汇率</a>
+       <p>背景： 特朗普上台后，宣称中国为汇率操纵国，后又在2018年4月...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/waihui/2018/0809/151.html">外汇和股票,期货的对比</a></li>
+<li><a href="/a/waihui/2018/0805/124.html">选对平台，资金无忧</a></li>
+<li><a href="/a/waihui/2018/0805/117.html">国内外汇交易的现状</a></li>
+<li><a href="/a/waihui/2018/0805/119.html">外汇交易和其他投资方式</a></li>
+<li><a href="/a/waihui/2018/0805/121.html">外汇交易需要多少前期资</a></li>
+<li><a href="/a/waihui/2018/0805/118.html">外汇交易是碰运气吗？</a></li>
+<li><a href="/a/waihui/2018/0805/122.html">遍及全球的MT4，谈谈外汇</a></li>
+<li><a href="/a/waihui/2018/0805/123.html">外汇交易如何开展</a></li>
+<li><a href="/a/waihui/2018/0805/120.html">外汇交易的特点</a></li>
+<li><a href="/a/waihui/2018/0813/152.html">外汇市场最常见的交易货</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>

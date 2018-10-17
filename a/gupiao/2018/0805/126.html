@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2017股市回首-中国篇_实在投资网</title>
+<meta name="keywords" content="2017,股市,回首,中国,篇,2017年,股,大盘," />
+<meta name="description" content="2017年，A股大盘波澜不惊，一年下来，沪指上涨不过6%，深成指上涨不足8%，而创业板则下跌了11%。 其中个股，五味杂成。有人喜，有人悲，悲的人总是大多是。A股依旧是一赢二平七负" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=126">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=126";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	
+      	<li><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	<li class='hover'><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	<li><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	
+      	<li><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/gupiao/'>股票</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>2017股市回首-中国篇</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-05-31 18:38<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=126&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">2017年，A股大盘波澜不惊，一年下来，沪指上涨不过6%，深成指上涨不足8%，而创业板则下跌了11%。 其中个股，五味杂成。有人喜，有人悲，悲的人总是大多是。A股依旧是一赢二平七负</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <p style="margin: 0px 0px 1em; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	2017年，A股大盘波澜不惊，一年下来，沪指上涨不过6%，深成指上涨不足8%，而创业板则下跌了11%。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	其中个股，五味杂成。有人喜，有人悲，悲的人总是大多是。A股依旧是一赢二平七负。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<span style="font-weight: 600;">市值小于100亿的，A股共有2344只（包括次新股），近1800只股票下跌，跌幅超过30%的近900只。</span></p>
+<figure style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<img class="origin_image zh-lightbox-thumb lazy" data-actualsrc="/uploads/allimg/180805/1435442c1-0.jpg" data-original="https://pic2.zhimg.com/v2-ea0719ff641625cf892ffc0755f01c73_r.jpg" data-rawheight="845" data-rawwidth="600" data-size="normal" src="/uploads/allimg/180805/1435441322-1.jpg" style="display: block; max-width: 100%; margin: 0px auto; cursor: zoom-in;" width="600" /><figcaption style="margin-top: 0.66667em; padding: 0px 1em; font-size: 0.9em; line-height: 1.5; text-align: center; color: rgb(153, 153, 153);">2017年跌的最多的股票，个中滋味&hellip;&hellip;</figcaption></figure>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	看这些股票，2017年依旧是熊。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	而另一方面，<span style="font-weight: 600;">在市值超过500亿的165只股票中，上涨的有128只。涨幅超过30%的就有77只。</span></p>
+<figure style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<img class="origin_image zh-lightbox-thumb lazy" data-actualsrc="/uploads/allimg/180805/143544O14-2.jpg" data-original="https://pic4.zhimg.com/v2-527d1e683aecad0437a2c892c1f8e4b3_r.jpg" data-rawheight="955" data-rawwidth="700" data-size="normal" src="/uploads/allimg/180805/1435443145-3.jpg" style="display: block; max-width: 100%; margin: 0px auto; cursor: zoom-in;" width="700" /><figcaption style="margin-top: 0.66667em; padding: 0px 1em; font-size: 0.9em; line-height: 1.5; text-align: center; color: rgb(153, 153, 153);">市值超过500亿，2017年涨幅最高的股票（华大基因为次新股）</figcaption></figure>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	看到这些，2017年A股仿佛又是只牛。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	对于大部分股民而言，<span style="font-weight: 600;">A股更多是牛头熊身，牛头是别人的，熊身却是自己的。</span></p>
+<figure style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<img class="origin_image zh-lightbox-thumb lazy" data-actualsrc="/uploads/allimg/180805/1435445c0-4.jpg" data-caption="" data-original="https://pic1.zhimg.com/v2-907ff86993970f59e4c56bbf31afef25_r.jpg" data-rawheight="442" data-rawwidth="584" data-size="normal" src="/uploads/allimg/180805/143544B25-5.jpg" style="display: block; max-width: 100%; margin: 0px auto; cursor: zoom-in;" width="584" /></figure>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	很多人充满了疑问，为什么这么久了，中小创还是在跌跌不休？</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	这其中原因是多方面的。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<span style="font-weight: 600;">首先就是之前的牛市里中小创涨幅过高，泡沫太严重，</span>凑个题材就能100倍的市盈率，到现在为止还有不少股票仍在去泡沫的阶段。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	而在泡沫产生了以后，<span style="font-weight: 600;">大量中小创并没有业绩去支撑，并且随着科技行业趋于垄断，很多中小企业反而失去机会</span>，在竞争中被淘汰，业绩下滑严重。互联网巨头如同怪物一般蚕食着市场的利润，连骨头都不吐出来。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<span style="font-weight: 600;">IPO的加速，更是直接造成了壳资源价值下跌。</span>以前随便什么股不管业绩有多烂都有四五十亿的市值，这也就是个壳资源，而现在壳资源的价值只剩一二十亿，且持续走低。遍地是壳就不存在壳。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	A股愈发地趋于港股化，大量的中小股成交量萎靡，有港股&ldquo;仙股&rdquo;的特征。</p>
+<figure style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<img class="origin_image zh-lightbox-thumb lazy" data-actualsrc="/uploads/allimg/180805/1435443239-6.jpg" data-original="https://pic4.zhimg.com/v2-03e57afc2966c10a516ea20c109fbdc8_r.jpg" data-rawheight="1027" data-rawwidth="800" data-size="normal" src="/uploads/allimg/180805/1435446452-7.jpg" style="display: block; max-width: 100%; margin: 0px auto; cursor: zoom-in;" width="800" /><figcaption style="margin-top: 0.66667em; padding: 0px 1em; font-size: 0.9em; line-height: 1.5; text-align: center; color: rgb(153, 153, 153);">宁波精达每天画符，成交量最低一天仅200多万，交易半小时无一股成交</figcaption></figure>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	也正是2017年，A股开始讨论价值投资，因为这一年，&ldquo;白马股&rdquo;们涨幅惊人。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<span style="font-weight: 600;">这其中既有业绩的驱动，也有其估值的修复。</span></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	很多人认为是资金抱团，国家护指数，其实都是片面的。这也是很多人在等崩盘却始终没有等来。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	&ldquo;白马股&rdquo;不过是种提法，实际上我个人并不认可这个概念，业绩一直向好股价自然会趋势上涨，不存在一个概念群叫白马股，很多股票软件里编制的白马股，里面也是鱼龙混杂，滥竽充数的不少。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	就像曾经的上证50里也有信威集团财务作假，并不是蓝筹都是好股。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<span style="font-weight: 600;">当炒作不再可行时，实实在在的业绩才是股价的第一驱动力。</span></p>
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：没有了 </li>
+     <li>下一篇：<a href='/a/gupiao/2018/0805/128.html'>2017股市回首-全球篇</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/gupiao/2018/0806/146.html">股市最基本的入门常识</a>
+       <p>1股票是什么？ 股票的持有者对股份公司的部分资本拥有所有权...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/gupiao/2018/0805/129.html">2018会有金融危机吗？</a></li>
+<li><a href="/a/gupiao/2018/0805/139.html">2018股市展望-中国篇</a></li>
+<li><a href="/a/gupiao/2018/0806/146.html">股市最基本的入门常识</a></li>
+<li><a href="/a/gupiao/2018/0805/130.html">外汇和股票哪个好</a></li>
+<li><a href="/a/gupiao/2018/0805/126.html">2017股市回首-中国篇</a></li>
+<li><a href="/a/gupiao/2018/0805/128.html">2017股市回首-全球篇</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>

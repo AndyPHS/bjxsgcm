@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>房地产去库存政策的远虑和近忧_实在投资网</title>
+<meta name="keywords" content="房地产,去,库存,政策,的,远虑,和,近忧,自,2015," />
+<meta name="description" content="自2015年开始实施的房地产去库存政策，虽然成功扭转了房价下行的趋势，但是也带来了不少负面影响，而且这种负面影响愈来愈明显。 下边这篇文章，来自中国社会科学院金融所金融" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=135">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=135";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	
+      	<li><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	
+      	<li><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	
+      	<li><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	<li class='hover'><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/fangdichan/'>房地产</a> > <a href='/a/fangdichan/shenrufenxi/'>深入分析</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>房地产去库存政策的远虑和近忧</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-06-29 18:35<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=135&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">自2015年开始实施的房地产去库存政策，虽然成功扭转了房价下行的趋势，但是也带来了不少负面影响，而且这种负面影响愈来愈明显。 下边这篇文章，来自中国社会科学院金融所金融</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <div>
+	自2015年开始实施的房地产去库存政策，虽然成功扭转了房价下行的趋势，但是也带来了不少负面影响，而且这种负面影响愈来愈明显。</div>
+<div>
+	&nbsp;</div>
+<div>
+	下边这篇文章，来自中国社会科学院金融所金融市场研究室副主任尹中立，文章详细介绍了去库存政策带来的种种问题。文章原载《经济观察报》。</div>
+<div>
+	&nbsp;</div>
+<div>
+	尽快退出房地产去库存政策</div>
+<div>
+	&nbsp;</div>
+<div>
+	2015年以来，在房地产去库存政策刺激下，房价轮番出现上涨，有效扭转了2014年前后房价持续下跌的趋势。但房地产市场的特点决定了房地产去库存政策只能是短期的权宜之计，不宜长期使用，现在应该逐步退出。</div>
+<div>
+	&nbsp;</div>
+<div>
+	一、房地产市场波动规律：没有均衡点</div>
+<div>
+	&nbsp;</div>
+<div>
+	房地产市场不同于一般消费品市场的价格波动规律。</div>
+<div>
+	&nbsp;</div>
+<div>
+	对于一般消费品而言，其市场波动存在一般均衡，市场存在一个均衡点，当价格趋近该均衡点，市场的供给和需求可以匹配。当市场供过于求时，可以通过市场自发的途径（即价格下跌，供给减少）来使市场恢复均衡，也可以通过刺激需求来使得市场恢复均衡。因此，在一般消费品市场去库存政策手段是有效的。</div>
+<div>
+	&nbsp;</div>
+<div>
+	对于房地产市场而言，它既有一般消费品的特点，还有投资品的特点。投资品市场的特点是不存在一般均衡，市场没有均衡点，当然也不存均衡价格。当价格上涨，会刺激需求，需求增加；价格下跌，需求下跌，供给也下跌。因此，投资品的价格和需求之间是正相关关系。这就是投资品市场的趋势波动规律，当资产价格上涨或下跌的趋势一旦形成，就会自我强化，直到有外力干预形成新的趋势。</div>
+<div>
+	&nbsp;</div>
+<div>
+	因此，当房地产市场形成了价格下跌趋势，适度刺激一下需求可以有效阻止市场惯性下跌，缓解市场供过于求的关系，但该政策不宜长期坚持，一旦形成新的价格上涨趋势，则供给会增加，不仅无助于去库存，而且还会产生其他副作用。</div>
+<div>
+	&nbsp;</div>
+<div>
+	二、房地产去库存政策的负面作用正在显现</div>
+<div>
+	&nbsp;</div>
+<div>
+	1、去库存政策强化了&ldquo;土地财政&rdquo;预期</div>
+<div>
+	&nbsp;</div>
+<div>
+	中国的土地制度决定了地方政府在土地定价方面的主导地位，地方政府一直谋求通过土地来获得大量财政资金。土地财政虽然早已经是事实，但并没有获得中央政府的背书，房地产去库存政策在一定程度上迎合了土地财政的需要，为地方政府的土地财政找到了合法的政策依据，这是房地产去库存政策出台以来一线城市、二线城市、三四城市房价轮番暴涨的制度基础。</div>
+<div>
+	&nbsp;</div>
+<div>
+	在房地产去库存政策工具中，拆迁的货币化补偿最受地方政府欢迎，该政策对三四线城市的房价上涨作用最大。2015年至2017年每年的棚户区改造计划都在600万套左右，但货币化安置比例逐步提高，2015年全国各类棚户区改造的货币化安置比例为29.9%；2016的货币化安置比例迅速上升到48.5%；2017年棚户区改造的货币化安置比例应该在60%左右。有些城市的房价已经出现大幅度上涨，但拆迁的货币补偿政策仍然在使用。背后的财政动机十分明显。</div>
+<div>
+	&nbsp;</div>
+<div>
+	有些地方政府还利用棚改的货币化安置政策进行财政融资，其做法是&ldquo;如果居民延后1年兑现棚改的货币化安置，可以获得10%的补贴&rdquo;，其本质是以10%的利率向居民进行融资，加大了地方政府的财政风险。</div>
+<div>
+	&nbsp;</div>
+<div>
+	对于买房者而言，房地产去库存及由此导致的房价上涨让他们等待房价回归的希望彻底破灭，他们的应对之策必然是想尽一切办法购买住房。所谓的&ldquo;首付贷&rdquo;等需求就是在这种背景下应运而生。</div>
+<div>
+	&nbsp;</div>
+<div>
+	对于房地产开发商而言，房地产去库存政策不仅让它们获利丰厚而且让它们更加相信宏观经济对房地产的依赖是不可取代的。尽管一线城市和大部分二线城市在2016年底之后相继启动了限购、限贷甚至是限售措施，房地产去库存政策事实上已经在这些城市退出，但曾经的去库存政策让开发商们相信各种限制措施都是暂时的，因此，一线城市的房价回落也必将是暂时的。</div>
+<div>
+	&nbsp;</div>
+<div>
+	开发商对未来房地产市场的预期可以从土地市场看出来。尽管2017年房价统计数据表现平稳，一线城市房价还出现连续多月份下跌，但开发商拿地热情高涨。2017年以来，全国300个城市各类用地共成交14.5亿平方米，同比增长11.0%，其中住宅用地成交6.9亿平方米，同比增长21.1%。一线城市住宅用地成交同比增长89.3%，在各线城市中增幅最大；二线城市同比增长9.8%，三四线城市同比增长28.1%。有很多土地是高价成交，说明开发商对房地产市场的预期是十分乐观的。</div>
+<div>
+	&nbsp;</div>
+<div>
+	2、房地产广义库存增加，尤其是高价土地风险隐现</div>
+<div>
+	&nbsp;</div>
+<div>
+	随着房价的上涨，开发商购置土地的积极性增加，新增土地储备面积大于商品房销售面积，库存不仅没有减少，反而增加。</div>
+<div>
+	&nbsp;</div>
+<div>
+	统计数据显示，2017年商品房销售总量是16.9亿平方米，而全国土地共成交17.3亿平方米，可见，新增加的土地面积大于销售的面积，库存是增加。</div>
+<div>
+	&nbsp;</div>
+<div>
+	从地方财政的角度看，当前的由棚改货币化安置带来的压力必然转嫁给未来的土地市场，在财政的压力下土地出让必然会增加，因此，房地产去库存在短期内可能是有效的，但中长期的结果可能与政策初衷是背道而驰的。</div>
+<div>
+	&nbsp;</div>
+<div>
+	不仅库存增加，更要关注高价土地存在的风险。2017年高总价、高溢价土地成交429宗，成交金额为12331亿元。从高价土地各线城市分布来看，一线城市成交高价地74宗，总成交金额3159亿元，较2016年增长48.7%；二线城市成交234宗，较2016年大幅减少61宗；三四线城市成交高价地121宗，较2016年增加79宗，成交面积2971万平方米，较2016年增长219.1%。</div>
+<div>
+	&nbsp;</div>
+<div>
+	尤其是三四线城市的高价土地最值得关注。在因城施策的政策下，2017年房地产去库存的政策重点是三四线城市，不少三四线城市的房价出现大幅度上涨，受此影响，刺激了这些城市的土地市场繁荣，2017年三四线城市的土地出让面积增加了两倍多。这有可能导致土地资源的错配，因为人口是向中型和大城市流动的，三四线城市的人口是流出的，土地的大量增加不利于房地产市场的健康发展。</div>
+<div>
+	&nbsp;</div>
+<div>
+	部分地块成交楼面价已经接近或超过限价及周边房价，未来去化可能存在风险。如北京2017年4月在朝阳及大兴区成交的两宗地块，未来销售限价均为2.9万元/平方米，但成交楼面价均超过3万/平方米；南京2017年3月31日成交的栖霞区地块，成交楼面均价为23800元/平方米，而周边项目在&ldquo;限价&rdquo;政策下开盘均价仅为25800元/平方米，2016年5月建邺区成交地块楼面价甚至达周边项目开盘均价1.4倍，未来项目去化难度较大。</div>
+<div>
+	&nbsp;</div>
+<div>
+	从高价地开盘情况看，2016年以来，热点城市成交了770余宗高价地块，截至目前已开盘项目约为30个。2017年由于部分城市严格执行限价政策，一些高价地块未来将存在一定风险。</div>
+<div>
+	&nbsp;</div>
+<div>
+	3、去库存导致房地产市场透支未来</div>
+<div>
+	&nbsp;</div>
+<div>
+	棚户区改造项目的货币化安置大大提高了居民的住房购买能力，提高了普通居民的居住水平，但其中蕴含的金融风险是不可忽视的。从金融的角度看，棚改的货币化是让支付能力低的居民获得了按揭贷款的机会，很多居民的按揭首付正是来源于棚改的货币化安置。正因为如此，居民的按揭贷款快速增加，在2016年的有些月度，新增加的贷款中按揭贷款占据了80%以上，2017年度新增贷款中居民贷款占53%，超过了企业贷款。</div>
+<div>
+	&nbsp;</div>
+<div>
+	在人均可支配收入增速逐年下滑背景下，居民金融杠杆的快速上升透支了未来的需求。三四线城市的居民收入水平低，用去库存的手段刺激购房，金融风险已经隐现。根据去库存政策，三四线城市的首付比例只有20%，有些城市还有一次性财政补贴，如果剔除财政补贴，首付比例不到20%。在这些城市的购房者中有不少是农村居民和工矿企业的职工，他们的收入水平较低且不稳定，贷款的偿还能力存在一定不确定性。</div>
+<div>
+	&nbsp;</div>
+<div>
+	三、政策建议</div>
+<div>
+	&nbsp;</div>
+<div>
+	两年多的房地产去库存政策已经成功扭转了房价下行的趋势，基本达到了预期的目的。房地产去库存政策事实上已经从一线城市和大部分二线城市退出，我们建议三四线城市也应该逐步停止实施房地产去库存政策。</div>
+<div>
+	&nbsp;</div>
+<div>
+	对于房价涨幅居前的三四线城市，应该停止土地拆迁的货币化补偿政策，减少或停止棚户区改造的货币化安置。对于住房市场平稳的城市，可以采取逐步退出房地产去库存政策的方式。</div>
+<div>
+	&nbsp;</div>
+<div>
+	应该采取严厉措施禁止金融机构或房地产开发商从事&ldquo;首付贷&rdquo;业务。对利用棚改政策变相向居民进行财政融资的行为也应该禁止。</div>
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：没有了 </li>
+     <li>下一篇：<a href='/a/fangdichan/shenrufenxi/2018/0805/136.html'>保障性住房事业成败的关键</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/fangdichan/shenrufenxi/2018/0805/137.html">楼市，银行政策与中国经济太平</a>
+       <p>新浪长安讲坛（总第329期）3月29日在清华大学举行，国务院参事...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/fangdichan/shenrufenxi/2018/0805/136.html">保障性住房事业成败的关</a></li>
+<li><a href="/a/fangdichan/shenrufenxi/2018/0805/137.html">楼市，银行政策与中国经</a></li>
+<li><a href="/a/fangdichan/shenrufenxi/2018/0805/138.html">差别化房贷政策的是与非</a></li>
+<li><a href="/a/fangdichan/shenrufenxi/2018/0805/135.html">房地产去库存政策的远虑</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",31,56);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_cmsurl";
+$z[1]=Array("field","",725,748);
+$z[1][4]=array();
+$z[1][4]['name']="id";
+$z[2]=Array("php","\r\n								for (\$i = 1; \$i < 12; \$i++)\r\n								{\r\n                                    \$isecheck = (\$i == 1) ? 'checked=\"1\" ' : '';\r\n								    echo '<input type=\"radio\" name=\"face\" value=\"'.\$i.'\" '.\$isecheck.'/><img src=\"'.\$cfg_templets_skin.'/img/mood/ico-mood-'.\$i.'.gif\" />';\r\n								}\r\n								",1099,1420);
+$z[2][4]=array();
+$z[3]=Array("php","\r\n								if(\$cfg_mb_open=='Y') {\r\n									echo '用户名:<input type=\"text\" name=\"username\" size=\"16\" class=\"ipt-txt\" style=\"text-transform: uppercase;\"/>';\r\n								}\r\n								",1550,1751);
+$z[3][4]=array();
+$z[4]=Array("php","\r\n								if(preg_match(\"/4/\",\$safe_gdopen)){\r\n								echo '验证码:<input type=\"text\" name=\"validate\" size=\"4\" class=\"ipt-txt\" style=\"text-transform:uppercase;\"/><img src= \"'.\$cfg_cmspath.'/include/vdimgck.php\" id=\"validateimg\" style=\"cursor:pointer\" onclick=\"this.src=this.src+\\'?\\'\" title=\"点击我更换图片\" alt=\"点击我更换图片\" />';\r\n								 }\r\n                                ",1785,2203);
+$z[4][4]=array();
+$z[5]=Array("php","\r\n								if(\$cfg_mb_open=='Y') {\r\n              		echo '<script language=\"javascript\" type=\"text/javascript\">CheckLogin();</script>';\r\n              	}\r\n							",2364,2546);
+$z[5][4]=array();
+$z[6]=Array("global","",3265,3290);
+$z[6][4]=array();
+$z[6][4]['name']="cfg_cmsurl";
+$z[7]=Array("global","",3435,3461);
+$z[7][4]=array();
+$z[7][4]['name']="cfg_phpurl";
+$z[8]=Array("field","",3499,3515);
+$z[8][4]=array();
+$z[8][4]['name']="id";
+$z[9]=Array("global","",3855,3880);
+$z[9][4]=array();
+$z[9][4]['name']="cfg_cmsurl";
+$z[10]=Array("global","",4810,4838);
+$z[10][4]=array();
+$z[10][4]['name']="cfg_soft_lang";
+$z[11]=Array("field","",4904,4920);
+$z[11][4]=array();
+$z[11][4]['name']="id";
+$z[12]=Array("global","",5263,5288);
+$z[12][4]=array();
+$z[12][4]['name']="cfg_phpurl";
+$z[13]=Array("global","",5427,5452);
+$z[13][4]=array();
+$z[13][4]['name']="cfg_cmsurl";
+
+?>

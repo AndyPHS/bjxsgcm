@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("global","",65,97);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_templets_skin";
+$z[1]=Array("field","",279,306);
+$z[1][4]=array();
+$z[1][4]['name']="phpurl";
+$z[2]=Array("global","",556,588);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_templets_skin";
+$z[3]=Array("channel","\r\n		      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>\r\n		    ",845,971);
+$z[3][4]=array();
+$z[3][4]['type']="son";
+$z[3][4]['typeid']="2";
+$z[4]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",1215,1369);
+$z[4][4]=array();
+$z[4][4]['row']="10";
+$z[4][4]['col']="1";
+$z[4][4]['titlelen']="60";
+$z[4][4]['orderby']="click";
+$z[4][4]['typeid']="all";
+$z[5]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n      ",1635,1773);
+$z[5][4]=array();
+$z[5][4]['row']="10";
+$z[5][4]['col']="1";
+$z[5][4]['titlelen']="60";
+$z[5][4]['typeid']="all";
+$z[6]=Array("feedback","\r\n        <li> <small><a href=\"#\" class=\"username\">[field:username function=\"(@me=='guest' ? 'ÓÎ¿Í' : @me)\"/]</a> ÆÀÂÛ <a href=\"/plus/view.php?aid=[field:aid/]\" class=\"title\">[field:title/]</a></small>\r\n        <p>[field:msg/]</p>\r\n        </li>\r\n        ",2021,2342);
+$z[6][4]=array();
+$z[6][4]['row']="7";
+$z[6][4]['titlelen']="30";
+$z[6][4]['infolen']="80";
+$z[7]=Array("tag","\r\n         <span><a class=\"tag\" href='[field:link/]'>[field:tag /]</a></span>",2570,2701);
+$z[7][4]=array();
+$z[7][4]['row']="20";
+$z[7][4]['getall']="1";
+$z[7][4]['sort']="month";
+$z[8]=Array("flink","",3356,3390);
+$z[8][4]=array();
+$z[8][4]['type']="image";
+$z[8][4]['row']="6";
+$z[9]=Array("flink","",3435,3468);
+$z[9][4]=array();
+$z[9][4]['type']="text";
+$z[9][4]['row']="6";
+
+?>

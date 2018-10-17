@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>期货入门知识_实在投资网</title>
+<meta name="keywords" content="期货,入门,知识,一,、,期货,是什么,是与,现货," />
+<meta name="description" content="一、期货是什么？ 期货是与现货相对应，并由现货衍生而来。期货通常指期货合约，期货与现货完全不同，现货是实实在在可以交易的货（商品），期货主要不是货，而是以某种大众产" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=141">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=141";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	
+      	<li><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	
+      	<li><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	<li class='hover'><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	<li><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/qihuo/'>期货</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>期货入门知识</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-06-29 12:59<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=141&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">一、期货是什么？ 期货是与现货相对应，并由现货衍生而来。期货通常指期货合约，期货与现货完全不同，现货是实实在在可以交易的货（商品），期货主要不是货，而是以某种大众产</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <h1 style="margin: 0px 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>一、期货是什么？　</strong></h1>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货是与现货相对应，并由现货衍生而来。期货通常指期货合约，期货与现货完全不同，现货是实实在在可以交易的货（商品），期货主要不是货，而是以某种大众产品及金融资产如股票、债券等为标的标准化可交易合约。因此，这个标的物可以是某种商品（例如黄金），也可以是金融工具。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　交收期货的日子可以是一星期之后，一个月之后，三个月之后，甚至一年之后。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　买卖期货的合同或协议叫做期货合约。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　买卖期货的场所叫做期货市场。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货交易即期货合约的买卖，它由远期现货交易衍生而来，是与现货交易相对应的交易方式。期货市场是进行期货交易的场所，它由远期现货市场发展而来，是与现货市场相对应的组织化和规范化程度更高的市场形态。</p>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>　　二、期货交易的特点</strong></h1>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>双向交易&mdash;&mdash;在熊市中，股市会萧条而期货市场却风光依旧</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　即通常所说的&ldquo;买空&rdquo;&ldquo;卖空&rdquo;。期货交易与股市的一个最大区别就期货可以双向交易，期货可以买空也可卖空：价格上涨时可以低买高卖来获利，价格下跌时可以高卖低补，做多可以赚钱，而做空也可以赚钱，所以说期货无熊市。在熊市中，股市会萧条而期货市场却风光依旧，机会依然存在。</p>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>期货保证金制度&mdash;&mdash;期货投资魅力所在</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　即通常说的杠杠，杠杆原理是期货投资魅力所在。期货市场里交易无需支付全部资金，目前国内期货交易通常只需要支付10%左右的保证金即可获得未来交易的权利。 由于保证金的运用，原本行情被以十余倍放大。</p>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>&ldquo;T+0&rdquo;交易机会增加&mdash;&mdash;方便的进出可以增加投资的安全性</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　即当天可以N次开仓平仓，使您的资金应用达到极致，发现行情不对可迅速离场。</p>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>交易费用低&mdash;&mdash;低廉额费用是成功的一个保证</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　目前我国对期货交易不征收印花税等税费，唯一费用就是交易手续费，目前普遍很低。</p>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>当日无负债结算&mdash;&mdash;实时控制账户风险</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货交易是每天结算，股票是卖出的时候才结算。作为交易者需要每日关注自己的资金是否足够维持持仓。</p>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>零和市场&mdash;&mdash;市场总资金量不变</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货市场本身并不创造利润。在某一时段里，不考虑资金的进出和提取交易费用，期货市场总资金量是不变的，不会出现负增长，市场参与者的盈利来自另一个交易者的亏损。</p>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	&nbsp;</h1>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>　　三、</strong><strong>期货市场的组成</strong></h1>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货市场由期货交易所、结算机构、中介与服务机构、投资者、期货监督管理机构等组成。我国期货市场目前有证监会为集中统一监管机构，期货业协会为行业自律组织，四大期货交易所，期货保证金监控中心，各期货公司等，随着国债期货、期货、期权的上市和业务的放开越来越多的银行、基金和信托都会积极参与期货市场。</p>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>　　四、</strong><strong>国内外重要期货交易所</strong></h1>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　芝加哥期货交易所（CBOT）&mdash;&mdash;世界上历史最长的交易所，也是当前最具代表性的农产品交易所。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　伦敦金属交易所（LME）成立于1876年，现已被我国的香港交易所收购，目前是世界上最大的有色金属交易所。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　上海期货交易所(Shanghai Futures Exchange，缩写为SHFE)成立于1998年8月，目前上市交易的有黄金、白银等11种期货合约。上海期货交易所现有会员398家，其中期货经纪公司会员占80%以上。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　大连商品交易所(Dalian Commodity Exchange，缩写：DCE)&mdash;&mdash;中国最大的农产品期货交易所。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　中国金融期货交易所（以下简称&ldquo;中金所&rdquo;）是经国务院同意，中国证监会批准设立的，专门从事金融期货、期权等金融衍生品交易与结算的公司制交易所。中金所由上海期货交易所、郑州商品交易所、大连商品交易所、上海证券交易所和深圳证券交易所共同发起，于2006年9月8日在上海正式挂牌成立，成为中国内地的第四家期货交易所，也是中国内地成立的首家金融衍生品交易所，该交易所为股份有限公司实行公司制，这也是中国内地首家采用公司制为组织形式的交易所。中国金融期货交易所的成立，对于深化资本市场改革，完善资本市场体系，发挥资本市场功能，具有重要的战略意义。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　2010年4月16日，中金所已正式推出沪深300股指期货合约。 2015年，中金所正式推出了10年期国债期货和上证50、中证500股指期货，现正积极筹划推出期权，并深入研究开发国债、外汇期货及期权等金融衍生产品。</p>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>　　五</strong><strong>、期货合约解读</strong></h1>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>期货合约</strong></h2>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	　　期货合约是指由期货交易所统一制定的、规定在将来某一特定的时间和地点交割一定数量和质量商品的标准化合约。它是期货交易的对象，期货交易参与者正是通过在期货交易所买卖期货合约，转移价格风险，获取风险收益。</h2>
+<h2 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>合约条款</strong></h2>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交易单位：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　交易单位是指在期货交易所交易的每手期货合约代表的标的商品的数量。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　报价单位：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　报价单位是指在公开竞价过程中对期货合约报价所使用的单位，即每计量单位的货币价格。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　最小变动价位：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　最小变动价位是指在期货交易所的公开竞价过程中，对合约标的每单位价格报价的最小变动数值。最小变动价位乘以交易单位，就是该合约价格的最小变动值。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　在期货交易中，每次报价必须是其合约规定的最小变动价位的整数倍。期货合约最小变动价位的确定，通常取决于该合约标的商品的种类、性质、市场价格波动情况和商业规范等。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　合约交割月份：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　合约交割月份是指某种期货合约到期交割的月份。期货合约的到期实际交割比例很小，美国芝加哥期货交易所（CBOT）的农产品交割量占该合约总交易量的比率一般为0.5%左右。期货合约的交割月份由期货交易所规定，期货交易者可自由选择交易不同交割月份的期货合约。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交易时间：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货合约的交易时间是固定的。每个交易所对交易时间都有严格规定。一般每周营业5天，周六、周日及国家法定节、假日休息。一般每个交易日分为两盘，即上午盘和下午盘，上午盘为9:00-11:30，下午盘为1:30-3:00。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　最后交易日：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　最后交易日是指某种期货合约在合约交割月份中进行交易的最后一个交易日，过了这个期限的未平仓期货合约，必须按规定进行实物交割或现金交割。根据不同期货合约标的商品的生产、消费和交易特点，期货交易所确定其不同的最后交易日。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交割日期：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　交割日期是指合约标的物所有权进行转移，以实物交割方式了结未平仓合约的时间。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交割等级：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　交割等级是指由期货交易所统一规定的、准许在交易所上市交易的合约标的物的质量等级。在进行期货交易时，交易双方无须对标的物的质量等级进行协商，发生实物交割时按交易所期货合约规定的标准质量等级进行交割。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交割地点：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　交割地点是指由期货交易所统一规定的，进行实物交割的指定交割仓库。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　最低保证金：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货交易实行保证金制度。买方和卖方必须按照其所买卖期货合约价值的一定比率缴纳资金，用于结算和保证履约。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交割方式：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货交易的交割方式分为实物交割和现金交割两种。商品期货通常采取实物交割方式，金融期货多采用现金交割方式。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　合约代码：</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　每一个期货合约都用合约代码来标识。合约代码由期货品种交易代码和合约到期月份组合在一起来标识。</p>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>　　六</strong><strong>、期货交易中的术语解读</strong></h1>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　商品期货：标的物为实物商品的期货合约。商品期货历史悠久，种类繁多，主要包括农副产品、金属产品、能源产品等几大类。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　金融期货：交易双方在金融市场上，以约定的时间和价格，买卖某种金融工具的具有约束力的标准化合约，是以金融工具为标的物的期货合约。金融期货一般分为三类，货币期货、利率期货和指数期货。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　股指期货（Share Price Index Futures）：英文简称SPIF，全称是股票价格指数期货，也可称为股价指数期货、期指，是指以股价指数为标的物的金融期货合约，</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　期货行情表提供了期货交易的相关信息，下面对表中相关术语进行简要解读。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　集合竞价</strong></p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	　　在某品种某合约每一交易日开市前5分钟内进行，其中前4分钟为期货合约买、卖指令申报时间，后1分钟为集合竟价撮合时间。集合竟价时间（8：59-9：00）内不能下单，而集合竟价中的未成交申报单自动参与开市后竟价交易。集合竟价采用最大成交量原则，即高于集合竟价产生的价格的买入申报全部成交；低于集合竟价产生的价格的卖出申报全部成交；等于集合竟价产生的价格的买入或卖出申报，根据买入申报量和卖出申报量的多少，按少的一方的申报量成交。</p>
+<br style="color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;" />
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　开盘价:</strong>指某一期货合约开市前五分钟内经集合竞价产生的成交价格。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　收盘价:</strong>指某一期货合约当日交易的最后一笔成交价格。 申买量：指某一期货合约当日交易所交易系统中未成交的最高价位申请买入的下单数量。 申卖量：指某一期货合约当日交易所交易系统中未成交的最低价位申请卖出的下单数量。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　结算价:</strong>指某一期货合约当日成交价格按成交量的加权平均价。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　持仓量:</strong>指期货交易者所持有的未平仓合约的双边数量。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　成交量:</strong>指某一期货合约在当日交易期间所有成交合约的双边数量。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　涨跌幅:</strong>某商品当日收盘价与昨日结算价之间的价差。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　涨停板额:</strong>某商品当日可输入的最高限价(涨停板额=昨结算价+最大变动幅度)</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　跌停板额:</strong>某商品当日可输入的最低限价(跌停板额=昨结算价-最大变幅)</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　买空:</strong>相信价格会涨并买入期货合约称&rdquo;买空&rdquo;或称&rdquo;多头&rdquo;，亦即多头交易。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　卖空:</strong>看跌价格并卖出期货合约称&rdquo;卖空&rdquo;或&rdquo;空头&rdquo;，亦即空头交易。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　头寸（交易部位）:</strong>一种市场约定。期货合约买方处于多头（买空）部位，期货合约卖方处于空头（卖空）部位。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　逼仓:</strong>期货交易所会员或客户利用资金优势，通过控制期货交易头寸或垄断可供交割的现货商品，故意抬高或压低期货市场价格，超量持仓、交割，迫使对方违约或以不利的价格平仓以牟取暴利的行为。根据操作手法不同，又可分为&ldquo;多逼空&ldquo;和&ldquo;空逼多&rdquo;两种方式。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　对敲:</strong>交易所会员或客户为了制造市场假象，企图或实际严重影响期货价格或者市场持仓量，蓄意串通，按照事先约定的方式或价格进行交易或互为买卖的行为。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　交割:</strong>期货合约卖方与期货合约买方之间进行的现货商品转移。各交易所对现货商品交割都规定有具体步骤。某些期货合约，如股票指数合约的交割采取现金结算方式。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>　　套利:</strong>投机者或对冲者都可以使用的一种交易技术，即在某市场买进现货或期货商品，同时在另一个市场卖出相同或类似的商品，并希望两个交易会产生价差而获利。</p>
+<br style="color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;" />
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>七、期货交易分类</strong></h1>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>套期保值</strong>：期货的套期保值指企业通过持有与其现货市场头寸相反的期货合约，或将期货合约作为其现货市场未来要进行的交易的替代物，以期对冲价格风险的方式。企业通过套期保值，可以降低价格风险对企业经营活动的影响，实现稳健经营。目前个人投资者不能进行套期保值交易。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>投机交易</strong>：交易者通过预测期货合约未来价格的变化，以在期货市场上获取价差收益为目的的交易行为。</p>
+<p style="margin: 1em 0px; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<strong>套利交易</strong>：利用相关市场或相关合约之间的价差变化，在相关市场或相关合约上进行交易方向相反的交易，以期价差发生有利变化时，同时讲持有头寸平仓而获利的交易行为。通常，套利被视为投机交易中的一种特殊的交易方式。</p>
+<h1 style="margin: 1.66667em 0px 0.83333em; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 1.2em; line-height: 1.5; font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; color: rgb(26, 26, 26);">
+	<strong>八、入市前的准备</strong></h1>
+<ol style="padding-right: 0px; padding-left: 0px; margin: 1em 0px 0px; display: table; counter-reset: ol 0; color: rgb(26, 26, 26); font-family: -apple-system, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, &quot;Source Han Sans SC&quot;, &quot;Noto Sans CJK SC&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif; font-size: medium;">
+	<li style="list-style: none; display: table-row;">
+		1正确理解期货交易风险，不可用股票的方式来玩期货。</li>
+	<li style="list-style: none; display: table-row;">
+		2了解所关注的期货合约细则，注意每个合约的要素不同。</li>
+	<li style="list-style: none; display: table-row;">
+		3下载安装交易软件</li>
+	<li style="list-style: none; display: table-row;">
+		4对交易软件的行情界面特别是交易界面熟悉。</li>
+	<li style="list-style: none; display: table-row;">
+		5对交易品种的基本面和技术面有一定了解，不盲目交易。</li>
+	<li style="list-style: none; display: table-row;">
+		6记录好期货公司客服电话以便处理紧急情况。</li>
+	<li style="list-style: none; display: table-row;">
+		7无论做什么品种，心中谨记&mdash;&mdash;<strong>止损第一。</strong></li>
+</ol>
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/a/qihuo/2018/0806/140.html'>什么是期货？</a> </li>
+     <li>下一篇：<a href='/a/qihuo/2018/0806/142.html'>2017年期货市场大事件盘点</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/qihuo/2018/0806/145.html">外汇和期货的区别是什么？</a>
+       <p>外汇和期货的区别是什么？很多的投资者在进行投资时，都不知...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/qihuo/2018/0806/142.html">2017年期货市场大事件盘点</a></li>
+<li><a href="/a/qihuo/2018/0806/140.html">什么是期货？</a></li>
+<li><a href="/a/qihuo/2018/0806/143.html">期货交易的十条基本原则</a></li>
+<li><a href="/a/qihuo/2018/0806/144.html">期货市场是如何运转的？</a></li>
+<li><a href="/a/qihuo/2018/0806/145.html">外汇和期货的区别是什么</a></li>
+<li><a href="/a/qihuo/2018/0806/141.html">期货入门知识</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>

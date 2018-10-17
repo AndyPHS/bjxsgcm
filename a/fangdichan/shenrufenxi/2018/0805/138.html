@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>差别化房贷政策的是与非_实在投资网</title>
+<meta name="keywords" content="差别化,房贷,政策,的,是与,非,或许,有人,要," />
+<meta name="description" content="或许有人要说了，既然买不起房，可以租房啊，国家不是在大力倡导租房吗？但是，我们应该清楚，购房与租房群体总体上是有差异的，何况还有传统因素的积淀（有恒产者有恒心）。" />
+<link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/view.php?aid=138">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/view.php?aid=138";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://www.sharptrader.com.cn/"><img src="/templets/default/images/logo_new.png" width="216px" alt="实在投资网"/></a> </h1>
+      </div>
+
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/'><span>主页</span></a></li>
+      	
+      	<li><a href='/a/waihui/' ><span>外汇</span></a></li>
+      	
+      	<li><a href='/a/gupiao/' ><span>股票</span></a></li>
+      	
+      	<li><a href='/a/qihuo/' ><span>期货</span></a></li>
+      	<li class='hover'><a href='/a/fangdichan/'  rel='dropmenu19'><span>房地产</span></a></li>
+      	<li><a href='/a/zhongmeimaoyizhan/' ><span>中美贸易战</span></a></li>
+      	
+      	<li><a href='/a/yidaiyilu/' ><span>一带一路</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/tags.php?/%E5%A4%96%E6%B1%87/'>外汇</a></li>
+          
+            <li><a href='/tags.php?/MT4/'>MT4</a></li>
+          
+            <li><a href='/tags.php?/%E6%94%BF%E7%AD%96/'>政策</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://www.sharptrader.com.cn//'>主页</a> > <a href='/a/fangdichan/'>房地产</a> > <a href='/a/fangdichan/shenrufenxi/'>深入分析</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>差别化房贷政策的是与非</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2018-07-20 18:34<small>点击:</small>
+   <script src="/plus/count.php?view=yes&aid=138&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">或许有人要说了，既然买不起房，可以租房啊，国家不是在大力倡导租房吗？但是，我们应该清楚，购房与租房群体总体上是有差异的，何况还有传统因素的积淀（有恒产者有恒心）。</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td>
+      <div>
+	或许有人要说了，既然买不起房，可以租房啊，国家不是在大力倡导租房吗？但是，我们应该清楚，购房与租房群体总体上是有差异的，何况还有传统因素的积淀（有恒产者有恒心）。假如这一&ldquo;夹心层&rdquo;群体的人因为首付、因为利息负担重而该当去租房，那么他们岂不是还不如低收入群体（可以享受保障性住房）？</div>
+<div>
+	&nbsp;</div>
+<div>
+	本文作者李庚南先后供职于工商银行、人民银行，现为银行监管部门人士，长期负责小企业金融服务推进工作，潜心研究小企业金融服务问题。摘自新浪财经意见领袖专栏（2018年03月08日）.</div>
+<div>
+	&nbsp;</div>
+<div>
+	差别化房贷政策已背离初衷</div>
+<div>
+	&nbsp;</div>
+<div>
+	这两天，媒体大咖们在忙于解读2018年《政府工作报告》；普通百姓们则忙于拆解藏在《政府工作报告》中的民生红包。从提高个人所得税起征点，到取消流量&ldquo;漫游&rdquo;费，到降低宽带和专线使用费、降低过路过桥费用、降低重点国有景区门票价格等，民生红包惠及扶贫、就业、养老、医疗、教育、住房、环保、个税、消费及新型城镇化等十大领域。</div>
+<div>
+	&nbsp;</div>
+<div>
+	可以说，整个政府工作报告从不同维度充分彰显了党和国家对民生的高度关注，彰显了执政者&ldquo;尽力而为、量力而行，把群众最关切最烦心的事一件一件解决好，促进社会公平正义和人的全面发展&rdquo;的决心，让闻者主人翁的感觉油然而生，也因此打开了百姓关于&ldquo;最烦心&rdquo;事的脑洞。</div>
+<div>
+	&nbsp;</div>
+<div>
+	毋庸讳言，《政府报告》不可能事无巨细到每一件牵动百姓的烦心事。正如李克强总理在回顾过去五年的发展成就时所坦言，在空气质量、环境卫生、食品药品安全和住房、教育、医疗、就业、养老等方面，群众还有不少不满意的地方。</div>
+<div>
+	&nbsp;</div>
+<div>
+	住房问题，特别是首套房贷款问题或许就是群众不满意的地方之一。这是近期朋友圈里热议的话题之一，也成了刚需一族（既没有住房又不符合保障性住房资格的群体）对两会的一点&ldquo;小期望&rdquo;。</div>
+<div>
+	&nbsp;</div>
+<div>
+	李克强总理在《政府工作报告》中明确，2018年要更好解决群众住房问题，再次强调&ldquo;坚持房子是用来住的、不是用来炒的定位，落实地方主体责任，继续实行差别化调控&rdquo;的政策导向，强调要&ldquo;支持居民自住购房需求，培育住房租赁市场，发展共有产权住房。加快建立多主体供给、多渠道保障、租购并举的住房制度，让广大人民群众早日实现安居宜居。&rdquo;显然，差别化依然是我国房地产调控的总基调，而差别化房地产信贷政策是核心。</div>
+<div>
+	&nbsp;</div>
+<div>
+	尽管不同调控期赋予了差别化调控政策不同的内容，但限制与鼓励始终是差别化政策的两面。按照差别化房地产信贷政策要求，商业银行应区分购房主体行为采取限制与鼓励的利率政策，体现有保有压的导向。一方面，通过上浮贷款利率及首付比例抑制投资投机性购房；另一方面对首套房贷实行优惠利率以支持自住性购房。抑制投资投机性购房是为了更好地满足自住性的刚需购房。</div>
+<div>
+	&nbsp;</div>
+<div>
+	但实际情况是，差别化房地产信贷政策或已陷入选择性、单向性误区。在持续调控总基调下，我们或许更多地注重如何抑制房地产市场的投资与投机性，而忽视或淡忘了差别化信贷政策的另一方面，即支持居民自住购房、让广大人民群众早日实现安居宜居的初衷。其突出表现就是商业银行在住房按揭贷款利率执行上，由最初的对首套房实行优惠利率、对二套房及以上实行利率上浮的差异化取向正逐渐异化，对首套房贷款利率由最初的7折、8.5折优惠利率逐渐回到基准利率以至继续上行。</div>
+<div>
+	&nbsp;</div>
+<div>
+	这是一个不争的事实，&mdash;&mdash;近年来全国不少城市住房按揭贷款利率呈现明显上升势头。截至2018年1月份，全国首套房贷款平均利率为5.43%，相当于基准利率1.11倍，环比2017年12月份上升0.93%；比去年1月份首套房贷款平均利率4.46%，上升21.75%。2018年1月房贷利率最高的城市是郑州，首套房贷平均利率达到5.84%，较基准利率将近上浮20%，最高上浮达30%。</div>
+<div>
+	&nbsp;</div>
+<div>
+	首套房贷款利率的上升，加上实际房价的上涨，使刚需一族的购房压力明显上升，甚至由现实可行性转为不可行性。</div>
+<div>
+	&nbsp;</div>
+<div>
+	以杭州为例：中国房价行情网显示的2018年1月份住房均价为30898元/m2，较2017年6月的23840元/m2，每平方米上涨了7418元；首套房贷款平均利率为5.54%，较基准利率平均上浮了13%。据此推算，杭州居民购买一套100m2住宅，若按7成首付20年期商业住房按揭贷款（还款方式为等额本息），上浮后月付按揭款14927元，较享受8.5折基准利率优惠时多付1443元；若再考虑房价实际上涨因素，则月付按揭款较实行8.5折基准利率时期至少多付4481元。这对中等收入家庭而言，无疑压力大增；而且，还可能因不符合监管部门关于&ldquo;月付/月收入不低于50%&rdquo;的要求而难以通过贷款审核。</div>
+<div>
+	&nbsp;</div>
+<div>
+	或许与房价的上涨比较，首套房贷利率上调本身所带来的对刚需族的购房压力大小还不是问题的关键。问题的关键在于，首套房利率上涨的趋势或将进一步模糊差异化房地产信贷政策支持与限制的边界，淡化对自住性购房需求特别是刚需购房的支持导向。</div>
+<div>
+	&nbsp;</div>
+<div>
+	毫无疑问，住房问题是一个关系民生的重大问题。在坚持&ldquo;房子是用来住的，不是用来炒的&rdquo;政策导向上，体现的应该是有保有压的区别对待政策：一方面应支持刚需，尽可能减轻这一群体的购房压力，充分考虑这一群体的承受能力，合理确定首付比例和贷款利率；另一方面，对投资投机型购房，可以通过提高首付比例和利率。既达到抑制这部分需求的目的，从商业角度可以以丰不欠。这其实也是符合社会公平导向的。</div>
+<div>
+	&nbsp;</div>
+<div>
+	从多渠道保障角度看，支持自住性购房需求特别是首套刚需与通过保障性住房支持低收入困难群体解决住房一样重要。在支持首套刚需购房方面，差异化住房信贷政策不仅不应淡化，而且需进一步强化、细化，政策需要照顾着夹心层居民的居住需求，就像以保障性住房满足低收入群体一样。</div>
+<div>
+	&nbsp;</div>
+<div>
+	一般来说，买首套房多属刚需，且大多身处中低收入群体。这一群体在居住需求上，处于稍微跳一跳就能够得着买房的尴尬境地。这种情况下，首套房贷款利率不断上浮，意味着他们不得不向银行支付更多利息，直接加大还款压力，有可能使一些人更买不起房，圆不了拥有一套属于自己住房的梦想，有违&ldquo;房子是用来住的&rdquo;精神。</div>
+<div>
+	&nbsp;</div>
+<div>
+	或许有人要说了，既然买不起房，可以租房啊，国家不是在大力倡导租房吗？但是，我们应该清楚，购房与租房群体总体上是有差异的，何况还有传统因素的积淀（有恒产者有恒心）。假如这一&ldquo;夹心层&rdquo;群体的人因为首付、因为利息负担重而该当去租房，那么他们岂不是还不如低收入群体（可以享受保障性住房）？这显然有失公平。要知道，美好生活的基础是不断改善而不是相反！</div>
+<div>
+	&nbsp;</div>
+<div>
+	诚然，按照市场的理念，商业银行调高或调低利率完全是一种利益驱动下的理性行为。对商业银行提高首套房贷款利率的行为，我们不应简单地用道德的标准，以&ldquo;贪婪、不厚道&rdquo;一言以蔽之。客观地看，首套房贷利率水平具有上行的内生动能，或者换言之，商业银行一直以来就有摆脱首套房贷低利率的强烈愿望。因为期限长、利率低、成本高的房贷业务，对商业银行而言并不经济，按照银行人的观点，房贷利率若低于8折则可能出现利差倒挂。</div>
+<div>
+	&nbsp;</div>
+<div>
+	所以，从商业利益的角度看，利率向基准回归或有助于改变这种商业银行在房地产信贷领域规模不经济的状况。此前，商业银行之所以愿意以低于基准利率的方式拓展房贷业务，除了基于抢占市场份额、应对资产荒压力的考量外，更多地或是为了顺应差别化房地产信贷政策的要求。</div>
+<div>
+	&nbsp;</div>
+<div>
+	在市场利率中枢不断抬升、银行资金成本不断上升、信贷规模趋紧，以及实体经济逐渐回暖情况下银行资产荒状况的改善、对房地产信贷依赖的降低等因素综合影响下，期限长、利率低的按揭贷款逐渐被银行冷落也是情理之中的事。商业银行&ldquo;借坡下驴&rdquo;，借着响应政府抑制住房投资投机的名义提高按揭贷款利率几乎成了近年来楼市之诡秘。这就无形中给提高首套房贷款利率营造了舆论氛围，以至于商业银行提高按揭贷款利率的行为往往被社会误读为监管部门的要求，并因此形成负反馈，进一步激发或带动更多的银行加入提息的行列。</div>
+<div>
+	&nbsp;</div>
+<div>
+	不可否认，从商业银行角度，调高住房贷款利率自有其理性的考量。但是，当个体理性衍变为集体非理性的时候，势必弱化差别化房地产信贷政策，影响国家&ldquo;让广大人民群众早日实现安居宜居&rdquo;这一目标的稳步推进。</div>
+<div>
+	&nbsp;</div>
+<div>
+	或许，商业银行强调资金成本上升带动按揭贷款利率上升的理由言之凿凿；但是，有两个问题在当下需要反思：</div>
+<div>
+	&nbsp;</div>
+<div>
+	一是对国家制定的差异化房地产信贷政策究竟该如何贯彻？作为拥有社会金融资源的商业银行，特别是国有大银行，不仅要追求自身经济利益，还需兼顾社会利益，既包括贯彻国家政策，也包括履行社会责任。切莫将提高首套房贷款利率与贯彻国家房地产调控的坚定性划等号！</div>
+<div>
+	&nbsp;</div>
+<div>
+	二是提高首套房贷款利率果真遵循了利率覆盖风险的导向吗？在首付由最初的2-3成提高到7-8成的高抵押比例情况下，商业银行房地产按揭贷款的名义风险敞口其实在大幅度降低（当然，际风险敞口则取决与整个市场的走势），从利率覆盖风险角度看，按揭贷款利率不仅不应提高而且应该有所下行。</div>
+<div>
+	&nbsp;</div>
+<div>
+	从政府管理部门角度，除了应督促商业银行贯彻差异化房地产信贷政策外，还应着眼长远，积极研究如何平衡好支持百姓自住型特别是刚需购房需求与商业银行经济利益的课题，加快房地产信贷制度方面的创新。如：增强央行MPA考核的灵活性，既应注重总量调控，又应体现信贷不同领域的差异性；探索建立住房保障贷款体系，其资金来源可以通过发行专项债，发放对象仅限于首套刚需（或适时放宽到改善性需求，对改善性需求自然应有准确的界定）；或探索住房按揭ABS，但底层资产只能对应住房刚需形成的资产。</div>
+<div>
+	&nbsp;</div>
+<div>
+	实际上，通过提高房贷利率特别是首套房贷利率，对遏制投机炒房行为作用有限，而所产生的对刚需人群的误伤则不容忽视。诚然，居民杠杆率不断上升的趋势的确需要引起我们的警惕；但是，我们在强调降杠杆的同时，还需思考一个问题：美好的生活是否需要适当的杠杆？这其实是一个毋庸置疑的问题。且不论美好生活的召唤，即使打脱贫攻坚战，也需要适当的金融杠杆来撬动。从人类历史发展看，这似乎是一个不言自明的问题。需要警醒的是，切莫在倒洗澡水的时候连同澡盆中的婴儿一块倒掉！</div>
+
+      
+     </td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+
+
+  
+  <!-- /pages -->
+
+
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/a/fangdichan/shenrufenxi/2018/0805/137.html'>楼市，银行政策与中国经济太平</a> </li>
+     <li>下一篇：没有了 </li>
+    </ul>
+   </div>
+   <!-- /context -->
+
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/a/fangdichan/shenrufenxi/2018/0805/137.html">楼市，银行政策与中国经济太平</a>
+       <p>新浪长安讲坛（总第329期）3月29日在清华大学举行，国务院参事...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/a/fangdichan/shenrufenxi/2018/0805/136.html">保障性住房事业成败的关</a></li>
+<li><a href="/a/fangdichan/shenrufenxi/2018/0805/137.html">楼市，银行政策与中国经</a></li>
+<li><a href="/a/fangdichan/shenrufenxi/2018/0805/138.html">差别化房贷政策的是与非</a></li>
+<li><a href="/a/fangdichan/shenrufenxi/2018/0805/135.html">房地产去库存政策的远虑</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+
+ </div>
+ <!-- /pright -->
+</div>
+ 
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            <a href="http://www.sharptrader.com.cn/" title="实在投资网" target="_blank">
+                <strong>实在投资网 www.sharptrader.com.cn</strong>
+            </a>
+
+        <div class="copyright">实在投资网版权所有&nbsp;&nbsp;网站备案：沪ICP备17054136号-3</div>
+        </p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+
+ <!-- /footer -->
+
+</body>
+</html>
